@@ -1,0 +1,15 @@
+.btn-primary {
+  color: white !important;
+  background: red !important;
+}
+
+.container {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+}
+
+.bg-dark, 
+.navbar-dark {
+  background: rgba(0,0,0, 0.7) !important;
+  color: #fff !important;
+}
