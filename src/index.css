@@ -1,3 +1,8 @@
+:root {
+  --gold: 	hsl(48, 100%, 44%);
+  --white: hsl(0, 0%, 0%);
+}
+
 body {
   background: rgba(0,0,0, 0.7) !important;
   margin: 0;

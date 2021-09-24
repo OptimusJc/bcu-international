@@ -6,6 +6,8 @@ import Form  from "react-bootstrap/Form"
 import { FormControl } from 'react-bootstrap'
 import logo from "../../src/logo.png"
 import "./Header.css"
+import { Link } from '@reach/router';
+
 
 const Header = () => (
 
@@ -22,10 +24,11 @@ const Header = () => (
       style={{ maxHeight: '100px'}}
       navbarScroll
     >
-      <Nav.Link href="#action1">Home</Nav.Link>
-      <Nav.Link href="#action2">Videos</Nav.Link>
-      <Nav.Link href="#action2">Podcasts</Nav.Link>
-      <Nav.Link href="#action2"></Nav.Link>
+  
+      <Nav.Link as={Link} to="/">Home</Nav.Link>
+      <Nav.Link as={Link} to="/podcasts">Podcasts</Nav.Link>
+      <Nav.Link as={Link} to="/videos">Videos</Nav.Link>
+
       <NavDropdown title="Channels" id="navbarScrollingDropdown">
         <NavDropdown.Item href="#action3">Radio</NavDropdown.Item>
         <NavDropdown.Divider />
@@ -44,8 +47,8 @@ const Header = () => (
       <Button variant="outline-success">Search</Button>
     </Form>
 
-    <Nav.Link href="#action2" className=" btn-primary">Sign Up</Nav.Link>
-    <Nav.Link href="#action2">Log In</Nav.Link>
+    <Nav.Link as={Link} to="/signup" className=" btn-primary">Sign Up</Nav.Link>
+    <Nav.Link as={Link} to="/login" >Log In</Nav.Link>
   </Navbar.Collapse>
 </Navbar>
 </div>
