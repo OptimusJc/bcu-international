@@ -1,11 +1,9 @@
-import Form from 'react-bootstrap/Form'
-import FormGroup from 'react-bootstrap/FormGroup'
-
-
+import Form from "react-bootstrap/Form"
+import Button from "react-bootstrap/Button";
 const Login=()=>{
     return(
         <div>
-            <Form>
+        <Form>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" />
@@ -16,7 +14,7 @@ const Login=()=>{
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
+    <Form.Control type="password"placeholder="Password" />
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
