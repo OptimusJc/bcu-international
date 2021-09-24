@@ -3,6 +3,8 @@ import Button from "react-bootstrap/Button";
 const Login=()=>{
     return(
         <div>
+            <h4>Login</h4>
+            <p>to continue to BCU TV</p>
         <Form>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -17,7 +19,7 @@ const Login=()=>{
     <Form.Control type="password"placeholder="Password" />
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
+    <Form.Check type="checkbox" label="Remember Me" />
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit
