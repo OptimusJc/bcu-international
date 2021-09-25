@@ -4,7 +4,7 @@ import Button  from 'react-bootstrap/Button'
 import { NavDropdown } from 'react-bootstrap'
 import Form  from "react-bootstrap/Form"
 import { FormControl } from 'react-bootstrap'
-import logo from "../../src/logo.png"
+import logo from "../logo.png"
 import "./Header.css"
 import { Link } from '@reach/router';
 
@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Header = () => (
 
   <div className="container">
-  <Navbar className="bg-dark navbar-dark" expand="lg">
+  <Navbar className="bg-dark navbar-dark" expand="md">
   <Navbar.Brand href="#">
   <img src={logo}  alt="logo" style={{ maxWidth: '250px'}}/>
     
@@ -50,7 +50,9 @@ const Header = () => (
       <Button variant="outline-success">Search</Button>
     </Form>
 
-    <Nav.Link as={Link} to="/signup" className=" btn-primary">Sign Up</Nav.Link>
+    <Nav.Link as={Link} to="/signup">
+      <Button variant="danger"> Sign Up</Button>
+    </Nav.Link>
     <Nav.Link as={Link} to="/login" >Log In</Nav.Link>
   </Navbar.Collapse>
 </Navbar>
