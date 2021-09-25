@@ -8,6 +8,9 @@ import logo from "../../src/logo.png"
 import "./Header.css"
 import { Link } from '@reach/router';
 
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Header = () => (
 

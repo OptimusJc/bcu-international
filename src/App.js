@@ -5,6 +5,8 @@ import Home from './home/Home'
 import Videos from './videos/Videos'
 import { Router } from '@reach/router';
 
+import Video from './videos/Video'
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Login path="/login" />
         <SignUp path="/signup"/>
         <Videos path="/videos" />
+        <Video path="/video" />
       </Router>
     </div>
   );
