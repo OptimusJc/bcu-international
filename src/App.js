@@ -4,6 +4,7 @@ import SignUp from './Authentication/signup/SignUp';
 import Home from './home/Home'
 import Videos from './videos/Videos'
 import { Router } from '@reach/router';
+import Footer from './footer/Footer'
 
 import Video from './videos/Video'
 
@@ -21,6 +22,7 @@ function App() {
         <Videos path="/videos" />
         <Video path="/video" />
       </Router>
+      <Footer/>
     </div>
   );
 }

@@ -30,12 +30,14 @@ const Header = () => (
   
       <Nav.Link as={Link} to="/">Home</Nav.Link>
       <Nav.Link as={Link} to="/podcasts">Podcasts</Nav.Link>
-      <Nav.Link as={Link} to="/videos">Videos</Nav.Link>
+      <Nav.Link as={Link} to="/videos">Videos on Demand</Nav.Link>
 
       <NavDropdown title="Channels" id="navbarScrollingDropdown">
-        <NavDropdown.Item href="#action3">Radio</NavDropdown.Item>
+        <NavDropdown.Item href="#action3">Radio Channel</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action5">Television</NavDropdown.Item>
+        <NavDropdown.Item href="#action5">Television Channel</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action5">Music Channel</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Form className="d-flex" style={{marginLeft: '70px', marginRight: '10px'}}>
