@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import db from "../firebase";
+import ReactPlayer from 'react-player'
 
  
 
@@ -28,14 +29,22 @@ const Videos = () => {
 
   return (
     <div>
-
    {
      videos.map((doc,index)=>{
        return(
          <div key={index}>
-<video class="video-fluid z-depth-1" autoplay loop controls muted>
+
+           <ReactPlayer
+           url={doc.mediaId}
+           width="400px"
+        height="300px"
+        playing={false}
+        controls={true}
+           />
+           
+ {/* <video class="video-fluid z-depth-1" autoplay loop controls muted>
   <source src={doc.mediaId}type="video/mp4" />
-</video>   
+</video>     */}
    
          <p>{doc.title}</p>
          <p>{doc.subtitle}</p>

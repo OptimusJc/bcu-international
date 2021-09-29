@@ -8,8 +8,6 @@ import logo from "../../src/logo.png"
 import "./Header.css"
 import { Link } from '@reach/router';
 
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Header = () => (
@@ -33,9 +31,9 @@ const Header = () => (
       <Nav.Link as={Link} to="/videos">Videos on Demand</Nav.Link>
 
       <NavDropdown title="Channels" id="navbarScrollingDropdown">
-        <NavDropdown.Item href="#action3">Radio Channel</NavDropdown.Item>
+        <NavDropdown.Item href="/radio">Radio Channel</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action5">Television Channel</NavDropdown.Item>
+        <NavDropdown.Item href="/television">Television Channel</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action5">Music Channel</NavDropdown.Item>
       </NavDropdown>
