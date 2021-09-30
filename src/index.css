@@ -1,19 +1,11 @@
 :root {
-  --gold: 	hsl(48, 100%, 44%);
-  --white: hsl(0, 0%, 0%);
+    --gold: hsl(48, 100%, 44%);
+    --white: hsl(0, 0%, 0%);
 }
 
 body {
-  background: center center/cover  url('./images/background.jpg') !important;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    background: center center/cover url("./images/background.jpg") !important;
+    margin: 0;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }

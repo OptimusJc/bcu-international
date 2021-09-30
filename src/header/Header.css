@@ -1,15 +1,59 @@
-.btn-primary {
-  color: white !important;
-  background: red !important;
+.brand-logo {
+    width: 150px;
+    height: 40px;
 }
 
-.container {
-  font-family: "poppins", sans-serif;
-  font-size: 14px;
+@media only screen and (min-width: 48em) {
+    .brand-logo {
+        width: 250px;
+        height: 50px;
+    }
 }
 
-.bg-dark, 
-.navbar-dark {
-  background: rgba(0,0,0, 0.7) !important;
-  color: #fff !important;
+@media only screen and (min-width: 75em) {
+    .brand-logo {
+        width: 300px;
+        height: 70px;
+    }
+    .dropdown-menu {
+        background: var(--black) !important;
+    }
+    .dropdown-menu a:hover {
+        background: rgba(255, 255, 255, 1) !important;
+    }
+}
+
+.dropdown-menu {
+    background: var(--black) !important;
+}
+.dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navbar-nav a,
+.dropdown-item {
+    color: #fff !important;
+    font-size: 400 !important;
+}
+
+/* .searchbar {
+    width: 300px !important;
+    margin-left: 0 !important;
+} */
+.navButtons {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.btn.btn-warning {
+    background: var(--gold) !important;
+}
+.btn.btn-outline-warning {
+    border: 2px solid var(--gold) !important;
+    color: var(--gold) !important;
 }
