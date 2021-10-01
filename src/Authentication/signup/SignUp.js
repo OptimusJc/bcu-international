@@ -62,7 +62,7 @@ const SignUp = () => {
                     </Col>
                     <Col
                         sm={{ span: 4, offset: 2 }}
-                        md={{ span: 3, offset: 2 }}
+                        md={{ span: 4, offset: 2 }}
                         className="signup"
                     >
                         <Button type="submit" className="btn btn-warning">

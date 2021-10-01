@@ -1,14 +1,21 @@
 import { Link } from "@reach/router";
 import { ListGroup } from "react-bootstrap";
 
-import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+    faFacebookF,
+    faInstagram,
+    faInstagramSquare,
+    faTwitter,
+    faTwitterSquare,
+    faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./Footer.css";
 
 const Footer = () => {
     return (
-        <footer className="page-footer align-bottom font-small pt-4">
+        <footer className="page-footer align-bottom font-small pt-4 text-centered">
             <div className="text-centered">
                 <div className="row">
                     <div className="col-md-3 mt-md-0 mt-3">
@@ -64,18 +71,43 @@ const Footer = () => {
                                 className="list_group"
                             >
                                 <a href="https://www.facebook.com/profile.php?id=100008233095156">
-                                    <FontAwesomeIcon icon={faFacebookF} />
+                                    <FontAwesomeIcon
+                                        icon={faFacebookF}
+                                        size={"lg"}
+                                    />
                                 </a>
                             </ListGroup.Item>
                             <ListGroup.Item
                                 variant="primary"
                                 className="list_group"
                             >
-                                <a
-                                    target="_blank"
-                                    href="https://www.youtube.com/channel/UC32x9S-LGduGd9Qbc4RAsBQ"
-                                >
-                                    <FontAwesomeIcon icon={faYoutube} />
+                                <a href="https://www.youtube.com/channel/UC32x9S-LGduGd9Qbc4RAsBQ">
+                                    <FontAwesomeIcon
+                                        icon={faYoutube}
+                                        size={"lg"}
+                                    />
+                                </a>
+                            </ListGroup.Item>
+                            <ListGroup.Item
+                                variant="primary"
+                                className="list_group"
+                            >
+                                <a href="">
+                                    <FontAwesomeIcon
+                                        icon={faInstagram}
+                                        size={"lg"}
+                                    />
+                                </a>
+                            </ListGroup.Item>
+                            <ListGroup.Item
+                                variant="primary"
+                                className="list_group"
+                            >
+                                <a href="">
+                                    <FontAwesomeIcon
+                                        icon={faTwitter}
+                                        size={"lg"}
+                                    />
                                 </a>
                             </ListGroup.Item>
                         </ListGroup>

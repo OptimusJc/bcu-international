@@ -1,18 +1,18 @@
 import { Row, Col } from "react-bootstrap";
 import Television from "../television/Television";
 import Videos from "../videos/Videos";
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div style={{ marginBottom: "2rem" }}>
+        <div style={{ marginBottom: "3rem" }}>
             <Row style={{ marginBottom: "3rem" }}>
-                <Col style={{ border: "1px solid red" }}>
+                <Col>
                     <Television />
                 </Col>
                 <Col>
                     <p
                         style={{
-                            border: "1px solid red",
                             height: "620px",
                             paddingTop: "300px",
                             paddingLeft: "1rem",

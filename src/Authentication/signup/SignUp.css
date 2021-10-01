@@ -27,7 +27,7 @@
         border: 2px solid var(--gold);
         height: 350px;
         width: 550px;
-        padding: 3rem 1rem;
+        padding: 3rem 1rem 0 3rem;
         margin: auto;
     }
     .signup {
