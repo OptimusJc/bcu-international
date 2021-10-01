@@ -1,0 +1,14 @@
+.card {
+    width: 500px;
+    margin: 5rem auto 0 auto;
+}
+
+.sound {
+    width: 200px !important;
+    margin: auto !important;
+    height: 70px !important;
+}
+
+.bg-dark {
+    background-color: var(--black) !important;
+}

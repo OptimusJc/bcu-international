@@ -4,127 +4,72 @@ import Button from "react-bootstrap/Button";
 import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { FormControl } from "react-bootstrap";
-import logo from "../images/bcu-logo.png";
-import { Link } from "@reach/router";
+
+import logo from "../../src/logo.png";
 import "./Header.css";
+import { Link } from "@reach/router";
 
 const Header = () => (
-    <div className="container-fluid ">
-        {/* <Navbar variant="dark" className="dark navbar-expand-lg" expand="md">
-            <Navbar.Brand as={Link} to="/">
-                <img src={logo} alt="logo" className="navbar-brand" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll" className="d-flex">
-                <Nav
-                    className="mr-auto my-2 my-lg-0 flex-grow-1"
-                    style={{ maxHeight: "100px" }}
-                    navbarScroll
-                >
-                    <Nav.Link as={Link} to="/">
-                        Home
-                    </Nav.Link>
-                    <Nav.Link as={Link} to="/podcasts">
-                        Podcasts
-                    </Nav.Link>
-                    <Nav.Link as={Link} to="/videos">
-                        Videos
-                    </Nav.Link>
-
-                    <NavDropdown title="Channels" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#action3">
-                            Radio
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action5">
-                            Television
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-
-                <Form className="d-flex " style={{ marginLeft: "30px" }}>
-                    <FormControl
-                        type="search"
-                        placeholder="Search"
-                        className="mr-2"
-                        aria-label="Search"
-                        style={{ maxWidth: "200px" }}
-                    />
-                </Form>
-
-                <Nav.Link as={Link} to="/signup">
-                    <Button variant="warning" className="btn-warning">
-                        Sign up
-                    </Button>
+    <Navbar variant="dark" expand="lg">
+        <Navbar.Brand href="#">
+            <img src={logo} alt="logo" className="brand-logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+            <Nav
+                className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
+                style={{ maxHeight: "150px" }}
+                navbarScroll
+            >
+                <Nav.Link as={Link} to="/">
+                    Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/login">
-                    <Button
-                        variant="outline-warning"
-                        className="btnOutlineWarning"
-                    >
-                        Login
-                    </Button>
+                <Nav.Link as={Link} to="/podcasts">
+                    Podcasts
                 </Nav.Link>
-            </Navbar.Collapse>
-        </Navbar> */}
-
-        <Navbar variant="dark" className="dark" expand="lg">
-            <Navbar.Brand href="#">
-                <img src={logo} alt="logo" className="navbar-brand" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-                <Nav
-                    className="mr-auto my-2 my-lg-0 flex-grow-1"
-                    style={{ maxHeight: "100px" }}
-                    navbarScroll
-                >
-                    <Nav.Link as={Link} to="/">
-                        Home
-                    </Nav.Link>
-                    <Nav.Link as={Link} to="/podcasts">
-                        Podcasts
-                    </Nav.Link>
-                    <Nav.Link as={Link} to="/videos">
-                        Videos
-                    </Nav.Link>
-
-                    <NavDropdown title="Channels" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#action3">
-                            Radio
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action5">
-                            Television
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-
-                <Form className="d-flex">
-                    <FormControl
-                        type="search"
-                        placeholder="Search"
-                        className="mr-2"
-                        aria-label="Search"
-                    />
-                </Form>
-
-                <Nav.Link as={Link} to="/signup">
-                    <Button variant="warning" className="btn-warning">
-                        Sign up
-                    </Button>
+                <Nav.Link as={Link} to="/videos">
+                    Videos on Demand
                 </Nav.Link>
-                <Nav.Link as={Link} to="/login">
-                    <Button
-                        variant="outline-warning"
-                        className="btnOutlineWarning"
-                    >
-                        Login
-                    </Button>
-                </Nav.Link>
-            </Navbar.Collapse>
-        </Navbar>
-    </div>
+
+                <NavDropdown title="Channels" id="navbarScrollingDropdown">
+                    <NavDropdown.Item href="/radio">
+                        Radio Channel
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="/television">
+                        Television Channel
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                        Music Channel
+                    </NavDropdown.Item>
+                </NavDropdown>
+            </Nav>
+            <Form className="d-flex my-3 mr-lg-5">
+                <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="searchbar d-block"
+                    aria-label="Search"
+                />
+            </Form>
+
+            <Nav.Link
+                as={Link}
+                to="/signup"
+                className=" btn btn-warning navButtons mr-lg-3"
+            >
+                Sign Up
+            </Nav.Link>
+            <Nav.Link
+                as={Link}
+                to="/login"
+                className="btn btn-outline-warning navButtons mr-lg-2"
+            >
+                Log In
+            </Nav.Link>
+        </Navbar.Collapse>
+    </Navbar>
 );
 
 export default Header;

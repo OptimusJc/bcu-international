@@ -1,15 +1,73 @@
-.dark {
-    background: rgba(0, 0, 0, 0.8) !important;
+.brand-logo {
+    width: 150px;
+    height: 40px;
 }
 
-.navbar-brand {
-    height: 100px;
-    width: 250px;
+.dropdown-menu {
+    background: var(--black) !important;
+}
+.dropdown-menu a:hover {
+    background: var(--gold-tint-1-transparent) !important;
 }
 
-@media (max-width: 360px) {
-    .navbar-brand {
-        width: 150px;
-        height: 80px;
+.navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navbar-nav a,
+.dropdown-item {
+    color: #fff !important;
+}
+
+/* .searchbar {
+    width: 300px !important;
+    margin-left: 0 !important;
+} */
+.navButtons {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.btn.btn-warning {
+    background: var(--gold) !important;
+    color: var(--black) !important;
+}
+.btn.btn-outline-warning {
+    border: 2px solid var(--gold) !important;
+    color: var(--gold) !important;
+}
+
+/* .btn.btn-warning:hover {
+    background: var(--gold-tint-1) !important;
+} */
+
+@media only screen and (min-width: 48em) {
+    .brand-logo {
+        width: 250px;
+        height: 50px;
+    }
+    /* form.searchbar {
+        background: red !important;
+    } */
+}
+
+@media only screen and (min-width: 75em) {
+    .brand-logo {
+        width: 300px;
+        height: 70px;
+    }
+    .dropdown-menu {
+        background: var(--black) !important;
+    }
+    .dropdown-menu a:hover {
+        /* background: rgba(255, 255, 255, 0.6) !important; */
+        background: var(--gold-tint-1-transparent) !important;
+    }
+
+    .searchbar {
+        background: var(--black) !important;
+        color: #fff !important;
+        border: 1px solid var(--gold) !important;
     }
 }

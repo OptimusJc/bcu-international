@@ -1,10 +1,21 @@
 * {
-  color: #fff;
+    color: #fff;
 }
 
 .container_core {
-  max-width: 400px;
-  margin: auto;
-  
+    max-width: 400px;
+    margin: auto;
 }
 
+@media only screen and (min-width: 75em) {
+    .form {
+        border: 2px solid var(--gold);
+        height: 400px;
+        width: 500px;
+        padding: 6rem 2rem 0 2rem;
+    }
+
+    .container_core {
+        min-height: 600px;
+    }
+}

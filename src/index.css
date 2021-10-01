@@ -1,16 +1,15 @@
 :root {
-    --gold: hsl(48, 100%, 44%);
-    --black: hsl(0, 0%, 0%);
-}
-
-*,
-*::before,
-*::after {
-    font-size: 16px;
-    font-family: "poppins", sans-serif;
+    --gold: hsla(48, 100%, 44%, 1);
+    --gold-tint-1: hsl(40, 100%, 60%);
+    --gold-tint-1-light: hsla(48, 100%, 96%, 1);
+    --gold-tint-1-transparent: hsla(48, 100%, 96%, 0.4);
+    --black: hsla(0, 0%, 0%, 1);
 }
 
 body {
-    background: top right/cover url("./images/BCU\ WEBSITE\ BACKGROUND2.jpg") !important;
+    background: top left/cover url("./images/BCU\ WEBSITE\ BACKGROUND2.jpg") !important;
     margin: 0;
+    /* font-family: "poppins", sans-serif; */
+    font-family: "poppins", sans-serif !important;
+    font-size: 16px;
 }
