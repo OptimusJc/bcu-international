@@ -8,7 +8,7 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <footer className="page-footer font-small pt-4">
+        <footer className="page-footer align-bottom font-small pt-4">
             <div className="text-centered">
                 <div className="row">
                     <div className="col-md-3 mt-md-0 mt-3">

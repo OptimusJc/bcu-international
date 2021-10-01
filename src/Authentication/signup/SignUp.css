@@ -11,25 +11,44 @@
     color: var(--gold-tint-1-light) !important;
 }
 
-@media only screen and (min-width: 75em) {
-    .form {
-        border: 2px solid var(--gold);
-        height: 400px;
-        width: 600px;
-        padding: 6rem 2rem 0 2rem;
-        margin: auto;
-    }
-
-    .main {
-        min-height: 600px;
-    }
-}
-
-@media only screen and (min-width: 48em) {
+/* come back take a look at this crap */
+/* @media only screen and (min-width: 48em) {
     .form .form-label {
         padding-right: 2rem !important;
     }
     .signup {
         margin-left: 6rem !important;
+    }
+} */
+
+@media only screen and (min-width: 75em) {
+    .form,
+    .form-login {
+        border: 2px solid var(--gold);
+        height: 350px;
+        width: 550px;
+        padding: 3rem 1rem;
+        margin: auto;
+    }
+    .signup {
+        margin-top: 4rem;
+        margin-bottom: 9rem;
+    }
+
+    .form-login {
+        height: 300px;
+        margin-bottom: 9rem;
+    }
+    .login {
+        margin-top: 4rem;
+    }
+
+    .form-control {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .main {
+        min-height: 600px;
     }
 }

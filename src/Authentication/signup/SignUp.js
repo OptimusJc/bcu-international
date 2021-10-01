@@ -5,7 +5,7 @@ import "./SignUp.css";
 
 const SignUp = () => {
     return (
-        <div>
+        <div className="signup">
             <h4 className="text-center">Sign Up</h4>
             <p className="text-center">to continue to BCU TV</p>
 
@@ -18,7 +18,7 @@ const SignUp = () => {
                     <Form.Label column sm={2} md={2}>
                         Email
                     </Form.Label>
-                    <Col sm={10} md={7}>
+                    <Col sm={10} md={10} lg={9}>
                         <Form.Control type="email" placeholder="Email" />
                     </Col>
                 </Form.Group>
@@ -31,7 +31,7 @@ const SignUp = () => {
                     <Form.Label column sm={2} md={2}>
                         Tel
                     </Form.Label>
-                    <Col sm={10} md={7}>
+                    <Col sm={10} md={10} lg={9}>
                         <Form.Control type="tel" placeholder="Telephone" />
                     </Col>
                 </Form.Group>
@@ -44,7 +44,7 @@ const SignUp = () => {
                     <Form.Label column sm={2} md={2}>
                         Password
                     </Form.Label>
-                    <Col sm={10} md={7}>
+                    <Col sm={10} md={10} lg={9}>
                         <Form.Control type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
@@ -55,8 +55,8 @@ const SignUp = () => {
                     controlId="formHorizontalCheck"
                 >
                     <Col
-                        sm={{ span: 4, offset: 1 }}
-                        md={{ span: 3, offset: 2 }}
+                        sm={{ span: 4, offset: 2 }}
+                        md={{ span: 4, offset: 2 }}
                     >
                         <Form.Check label="Remember me" />
                     </Col>
