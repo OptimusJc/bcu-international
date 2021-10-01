@@ -9,7 +9,7 @@ import "./Header.css";
 import { Link } from "@reach/router";
 
 const Header = () => (
-    <div className="container-fluid">
+    <div>
         <Navbar variant="dark" expand="lg">
             <Navbar.Brand href="#">
                 <img src={logo} alt="logo" className="brand-logo" />
@@ -17,7 +17,7 @@ const Header = () => (
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
-                    className="mr-auto my-2 my-lg-0 navigation"
+                    className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
                     style={{ maxHeight: "150px" }}
                     navbarScroll
                 >
@@ -45,10 +45,7 @@ const Header = () => (
                         </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
-                <Form
-                    className="d-flex my-3"
-                    // style={{ marginLeft: "70px", marginRight: "10px" }}
-                >
+                <Form className="d-flex my-3 mr-lg-5">
                     <FormControl
                         type="search"
                         placeholder="Search"
@@ -60,14 +57,14 @@ const Header = () => (
                 <Nav.Link
                     as={Link}
                     to="/signup"
-                    className=" btn btn-warning navButtons"
+                    className=" btn btn-warning navButtons mr-lg-3"
                 >
                     Sign Up
                 </Nav.Link>
                 <Nav.Link
                     as={Link}
                     to="/login"
-                    className="btn btn-outline-warning navButtons"
+                    className="btn btn-outline-warning navButtons mr-lg-2"
                 >
                     Log In
                 </Nav.Link>

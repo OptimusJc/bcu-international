@@ -1,0 +1,35 @@
+.form-control,
+.form-control:focus {
+    background: none !important;
+}
+
+.form-control {
+    border: 1px solid var(--gold) !important;
+    outline: none !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    color: var(--gold-tint-1-light) !important;
+}
+
+@media only screen and (min-width: 75em) {
+    .form {
+        border: 2px solid var(--gold);
+        height: 400px;
+        width: 600px;
+        padding: 6rem 2rem 0 2rem;
+        margin: auto;
+    }
+
+    .main {
+        min-height: 600px;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .form .form-label {
+        padding-right: 2rem !important;
+    }
+    .signup {
+        margin-left: 6rem !important;
+    }
+}

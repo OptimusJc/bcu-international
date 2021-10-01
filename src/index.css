@@ -1,11 +1,15 @@
 :root {
-    --gold: hsl(48, 100%, 44%);
-    --white: hsl(0, 0%, 0%);
+    --gold: hsla(48, 100%, 44%, 1);
+    --gold-tint-1: hsl(40, 100%, 60%);
+    --gold-tint-1-light: hsla(48, 100%, 96%, 1);
+    --gold-tint-1-transparent: hsla(48, 100%, 96%, 0.4);
+    --black: hsla(0, 0%, 0%, 1);
 }
 
 body {
-    background: center center/cover url("./images/background.jpg") !important;
+    background: top left/cover url("./images/background.jpg") !important;
     margin: 0;
-    font-family: "poppins", Arial, Helvetica, sans-serif;
+    /* font-family: "poppins", sans-serif; */
+    font-family: "poppins", sans-serif !important;
     font-size: 16px;
 }

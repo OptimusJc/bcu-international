@@ -3,31 +3,11 @@
     height: 40px;
 }
 
-@media only screen and (min-width: 48em) {
-    .brand-logo {
-        width: 250px;
-        height: 50px;
-    }
-}
-
-@media only screen and (min-width: 75em) {
-    .brand-logo {
-        width: 300px;
-        height: 70px;
-    }
-    .dropdown-menu {
-        background: var(--black) !important;
-    }
-    .dropdown-menu a:hover {
-        background: rgba(255, 255, 255, 1) !important;
-    }
-}
-
 .dropdown-menu {
     background: var(--black) !important;
 }
 .dropdown-menu a:hover {
-    background: rgba(255, 255, 255, 0.6) !important;
+    background: var(--gold-tint-1-transparent) !important;
 }
 
 .navbar {
@@ -52,8 +32,43 @@
 
 .btn.btn-warning {
     background: var(--gold) !important;
+    color: var(--black) !important;
 }
 .btn.btn-outline-warning {
     border: 2px solid var(--gold) !important;
     color: var(--gold) !important;
+}
+
+/* .btn.btn-warning:hover {
+    background: var(--gold-tint-1) !important;
+} */
+
+@media only screen and (min-width: 48em) {
+    .brand-logo {
+        width: 250px;
+        height: 50px;
+    }
+    form.searchbar {
+        background: red !important;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .brand-logo {
+        width: 300px;
+        height: 70px;
+    }
+    .dropdown-menu {
+        background: var(--black) !important;
+    }
+    .dropdown-menu a:hover {
+        /* background: rgba(255, 255, 255, 0.6) !important; */
+        background: var(--gold-tint-1-transparent) !important;
+    }
+
+    .searchbar {
+        background: var(--black) !important;
+        color: #fff !important;
+        border: 1px solid var(--gold) !important;
+    }
 }
