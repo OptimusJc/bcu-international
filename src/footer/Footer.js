@@ -9,7 +9,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="page-footer font-small pt-4">
-            <div className="container-fluid text-centered  text-md-left">
+            <div className="text-centered">
                 <div className="row">
                     <div className="col-md-3 mt-md-0 mt-3">
                         <h5 className="text-uppercase">BCU International</h5>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <hr className="clearfix w-100 d-md-none pb-0" />
 
                     <div className="col-md-3 mb-md-0 mb-3">
-                        <h5 className="text-uppercase">Links</h5>
+                        <h5 className="text-capitalize">About Us</h5>
                         <ul className="list-unstyled">
                             <li>
                                 <Link to="/">Home</Link>
@@ -30,12 +30,6 @@ const Footer = () => {
                             <li>
                                 <Link to="/videos">Videos</Link>
                             </li>
-                        </ul>
-                    </div>
-
-                    <div className="col-md-3 mb-md-0 mb-3">
-                        <h5 className="text-uppercase">Channels</h5>
-                        <ul className="list-unstyled">
                             <li>
                                 <Link to="/radio">Radio</Link>
                             </li>
@@ -46,19 +40,22 @@ const Footer = () => {
                     </div>
 
                     <div className="col-md-3 mb-md-0 mb-3">
-                        <h5 className="text-uppercase">Social Media</h5>
-                        {/* <ul className="list-unstyled d-inline">
-                  <li>
-                      <Link to="">
-                      <FontAwesomeIcon icon={ faFacebookF} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="">
-                        <FontAwesomeIcon icon={ faYoutube} />
-                      </Link>
-                    </li>
-                </ul> */}
+                        <h5 className="text-capitalize">Info</h5>
+                        <ul className="list-unstyled">
+                            <li>
+                                <Link to="">Terms of Use</Link>
+                            </li>
+                            <li>
+                                <Link to="">Copyright Policy</Link>
+                            </li>
+                            <li>
+                                <Link to="">F.A.Q</Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="col-md-3 mb-md-0 mb-3 ">
+                        <h5 className="text-capitalize">Social Media</h5>
 
                         {/* NOTE: Fix the _blank issue */}
                         <ListGroup horizontal>

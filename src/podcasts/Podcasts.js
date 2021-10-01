@@ -3,30 +3,30 @@ import db from "../firebase.config";
 import ReactPlayer from "react-player";
 
 const Podcasts = () => {
-    const [videos, setVideos] = useState([]);
-    useEffect(() => {
-        fetchAll();
-    }, []);
+    // const [videos, setVideos] = useState([]);
+    // useEffect(() => {
+    //     fetchAll();
+    // }, []);
 
-    function fetchAll() {
-        //e.preventDefault();
+    // function fetchAll() {
+    //     //e.preventDefault();
 
-        db.collection("songs")
-            .get()
-            .then((snapshot) => {
-                if (snapshot.docs.length > 0) {
-                    snapshot.docs.forEach((doc) => {
-                        setVideos((prev) => {
-                            return [...prev, doc.data()];
-                        });
-                    });
-                }
-            });
-    }
+    //     db.collection("songs")
+    //         .get()
+    //         .then((snapshot) => {
+    //             if (snapshot.docs.length > 0) {
+    //                 snapshot.docs.forEach((doc) => {
+    //                     setVideos((prev) => {
+    //                         return [...prev, doc.data()];
+    //                     });
+    //                 });
+    //             }
+    //         });
+    // }
 
     return (
         <div>
-            {videos.map((doc, index) => {
+            {/* {videos.map((doc, index) => {
                 return (
                     <div key={index}>
                         <ReactPlayer
@@ -41,7 +41,7 @@ const Podcasts = () => {
                         <p>{doc.subtitle}</p>
                     </div>
                 );
-            })}
+            })} */}
         </div>
     );
 };

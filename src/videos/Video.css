@@ -1,0 +1,10 @@
+.container-video {
+    max-height: 80vh;
+    width: 700px;
+    overflow-y: scroll;
+}
+
+.videos {
+    width: 600px;
+    height: 400px;
+}

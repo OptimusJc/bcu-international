@@ -55,7 +55,7 @@
 @media only screen and (min-width: 75em) {
     .brand-logo {
         width: 300px;
-        height: 70px;
+        height: 60px;
     }
     .dropdown-menu {
         background: var(--black) !important;
