@@ -1,15 +1,15 @@
-.btn-primary {
-  color: white !important;
-  background: red !important;
+.dark {
+    background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.container {
-  font-family: "poppins", sans-serif;
-  font-size: 14px;
+.navbar-brand {
+    height: 100px;
+    width: 250px;
 }
 
-.bg-dark,
-.navbar-dark {
-  background: rgba(0,0,0, 0.7) !important;
-  color: #fff !important;
+@media (max-width: 360px) {
+    .navbar-brand {
+        width: 150px;
+        height: 80px;
+    }
 }
