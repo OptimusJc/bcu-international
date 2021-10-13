@@ -75,7 +75,7 @@ const Footer = () => {
                                 <a href="https://www.facebook.com/profile.php?id=100008233095156">
                                     <FontAwesomeIcon
                                         icon={faFacebookF}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>
@@ -86,7 +86,7 @@ const Footer = () => {
                                 <a href="https://www.youtube.com/channel/UC32x9S-LGduGd9Qbc4RAsBQ">
                                     <FontAwesomeIcon
                                         icon={faYoutube}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>
@@ -97,7 +97,7 @@ const Footer = () => {
                                 <a href="">
                                     <FontAwesomeIcon
                                         icon={faInstagram}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>
@@ -108,7 +108,7 @@ const Footer = () => {
                                 <a href="">
                                     <FontAwesomeIcon
                                         icon={faTwitter}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>

@@ -9,3 +9,11 @@
     margin-right: -15px !important;
     margin-left: -15px !important;
 }
+
+@media only screen and (min-width: 48em) {
+    .video-container {
+        height: 400px !important;
+        width: 600px !important;
+        margin: auto;
+    }
+}

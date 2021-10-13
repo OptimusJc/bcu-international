@@ -47,9 +47,14 @@
         width: 250px;
         height: 50px;
     }
-    /* form.searchbar {
-        background: red !important;
-    } */
+    
+    .searchbar {
+        width: 300px !important;    
+    }
+
+    .btn {
+        width: 300px;
+    }
 }
 
 @media only screen and (min-width: 75em) {

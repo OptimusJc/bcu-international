@@ -12,3 +12,15 @@
     width: 330px;
     height: 300px;
 }
+
+
+@media only screen and (min-width: 48em) {
+    .videos {
+        width: 500px;
+        height: 350px;
+    }
+
+    .container-video p {
+        width: 400px;
+    }
+}
