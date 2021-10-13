@@ -1,0 +1,11 @@
+.video-container {
+    width: 100% !important;
+    height: 250px !important;
+
+}
+
+.card {
+    width: auto !important;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
