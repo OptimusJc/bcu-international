@@ -19,11 +19,13 @@ const Footer = () => {
             <div className="text-centered">
                 <div className="row">
                     <div className="col-md-3 mt-md-0 mt-3">
-                        <h5 className="text-uppercase">BCU International</h5>
+                        <h5 className="text-uppercase">
+                            BCU International
+                        </h5>
                         <p>We are a move of God.</p>
                     </div>
 
-                    <hr className="clearfix w-100 d-md-none pb-0" />
+                    <hr className="clearfix w-50 d-md-none pb-0" />
 
                     <div className="col-md-3 mb-md-0 mb-3">
                         <h5 className="text-capitalize">About Us</h5>

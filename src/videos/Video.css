@@ -4,7 +4,11 @@
     overflow-y: scroll;
 }
 
+.container-video p {
+    width: 300px;
+}
+
 .videos {
-    width: 600px;
-    height: 400px;
+    width: 330px;
+    height: 300px;
 }

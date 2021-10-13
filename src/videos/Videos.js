@@ -30,7 +30,7 @@ const Videos = () => {
             {videos.map((doc, index) => {
                 return (
                     <div key={index}>
-                        <video controls width="250" className="videos">
+                        <video controls width="200" className="videos">
                             <source
                                 src={doc.mediaId}
                                 type="video/mp4"
@@ -39,7 +39,7 @@ const Videos = () => {
                             Sorry, your browser doesn't support embedded videos.
                         </video>
 
-                        <p>{doc.title}</p>
+                        <p >{doc.title}</p>
                         <p>{doc.subtitle}</p>
                     </div>
                 );
@@ -47,5 +47,6 @@ const Videos = () => {
         </div>
     );
 };
+
 
 export default Videos;

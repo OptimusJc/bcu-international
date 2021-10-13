@@ -1,3 +1,21 @@
 .col {
     border: 1px solid var(--gold);
 }
+
+.tv-box {
+    height: 350px;
+}
+
+.coming-soon {
+    height: 150px;
+    margin-bottom: 2rem;
+}
+
+.coming-soon .col p {
+    padding-top: 2rem;
+    font-size: 2.3rem;
+}
+.coming-soon p .lead {
+    padding-left: 1rem;
+    font-size: 1rem;
+}

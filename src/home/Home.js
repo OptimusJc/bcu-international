@@ -6,19 +6,16 @@ import "./Home.css";
 const Home = () => {
     return (
         <div style={{ marginBottom: "3rem" }}>
-            <Row style={{ marginBottom: "3rem" }}>
-                <Col>
+            <Row >
+                <Col className="tv-box">
                     <Television />
                 </Col>
-                <Col>
-                    <p
-                        style={{
-                            height: "620px",
-                            paddingTop: "300px",
-                            paddingLeft: "1rem",
-                        }}
-                        className="display-4"
-                    >
+                
+            </Row>
+
+            <Row className="coming-soon"> 
+            <Col >
+                    <p className="display-6">
                         BCU Television
                         <sub className="lead">coming soon...</sub>
                     </p>
