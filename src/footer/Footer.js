@@ -25,7 +25,7 @@ const Footer = () => {
                         <p>We are a move of God.</p>
                     </div>
 
-                    <hr className="clearfix w-50 d-md-none pb-0" />
+                    <hr className="clearfix w-50 w-md-100 d-md-none pb-0" />
 
                     <div className="col-md-3 mb-md-0 mb-3">
                         <h5 className="text-capitalize">About Us</h5>

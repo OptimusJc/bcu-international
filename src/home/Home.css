@@ -33,4 +33,22 @@
     .coming-soon .col {
         border: none;
     }
+
+}
+
+
+/* desktop devices  */
+@media only screen and (min-width: 75em) {
+    .home .column {
+        display: flex;
+    }
+    
+    .home .column .row:first-child {
+        flex: 2 !important;
+        margin-bottom: 2rem;
+    }
+
+    .coming-soon .col p {
+        line-height: 550px;
+    }
 }

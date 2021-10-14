@@ -17,6 +17,7 @@ const Television = () => {
                     ]}
                 />
             </Card>
+            <div className="spacing"></div>
         </div>
     );
 };

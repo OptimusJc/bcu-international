@@ -5,7 +5,8 @@ import "./Home.css";
 
 const Home = () => {
     return (
-        <div style={{ marginBottom: "3rem" }}>
+        <div className="home" style={{ marginBottom: "3rem" }}>
+            <div className="column">
             <Row >
                 <Col className="tv-box">
                     <Television />
@@ -21,6 +22,7 @@ const Home = () => {
                     </p>
                 </Col>
             </Row>
+            </div>
             <h2 style={{ color: "gold" }}>
                 Body of Christ International Videos on Demand
             </h2>
