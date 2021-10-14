@@ -12,14 +12,24 @@
 }
 
 /* come back take a look at this crap */
-/* @media only screen and (min-width: 48em) {
-    .form .form-label {
-        padding-right: 2rem !important;
+@media only screen and (min-width: 48em) {
+
+    .form, .form-login {
+        margin: auto !important;
+        width: 450px;
+        margin-bottom: 5rem !important;
     }
-    .signup {
-        margin-left: 6rem !important;
+
+    .signup .btn {
+        width: 150px;
+        margin-left: 1.5rem;
     }
-} */
+
+    .signup, .login {
+        margin-top: 15rem;
+        margin-bottom: 10rem;
+    }
+}
 
 @media only screen and (min-width: 75em) {
     .form,

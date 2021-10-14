@@ -15,7 +15,7 @@
 }
 
 body {
-    background: top left/cover url("./images/BCU\ WEBSITE\ BACKGROUND2.jpg");
+    background: center/cover  url("./images/BCU\ WEBSITE\ BACKGROUND2@2x.png");
     margin: 0;
     /* font-family: "poppins", sans-serif; */
     font-family: "poppins", sans-serif !important;
