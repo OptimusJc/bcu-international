@@ -4,10 +4,11 @@
 
 }
 
-.card {
+.television .card {
     width: auto !important;
     margin-right: -15px !important;
     margin-left: -15px !important;
+    background: var(--black) !important;
 }
 
 @media only screen and (min-width: 48em) {
@@ -16,4 +17,9 @@
         width: 600px !important;
         margin: auto;
     }
+
+    .television .card {
+        margin-top: 4rem;
+    }
+
 }

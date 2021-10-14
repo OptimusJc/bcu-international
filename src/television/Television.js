@@ -5,7 +5,7 @@ import './Television.css';
 
 const Television = () => {
     return (
-        <div>
+        <div className="television">
             <Card className=" text-white"  >
                 <Card.Title className="text-center">
                     NESBIT TELEVISION
