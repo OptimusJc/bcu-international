@@ -3,8 +3,12 @@ import db from "../firebase";
 import ReactPlayer from "react-player";
 import "./Video.css";
 
+
+
 const Videos = () => {
     const [videos, setVideos] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+
     useEffect(() => {
         fetchAll();
     }, []);
@@ -25,9 +29,24 @@ const Videos = () => {
             });
     }
 
+
+
     return (
         <div className="container-video">
-            {videos.map((doc, index) => {
+        <input type="text"
+        style={{color: 'black'}}
+        placeholder="search..." onChange={(event)=>{
+            setSearchTerm(event.target.value);
+        }}/>
+            {videos.filter((doc)=>{
+                if(searchTerm==""){
+                    return doc
+                }
+                else if(doc.title.toLowerCase().includes(searchTerm.toLowerCase())||doc.subtitle.toLowerCase().includes(searchTerm.toLowerCase())){
+                         return  doc
+                  
+            }})
+            .map((doc, index) => {
                 return (
                     <div key={index}>
                         <video controls width="200" className="videos">
