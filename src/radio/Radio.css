@@ -9,3 +9,11 @@
     display: block;
     margin: auto;
 }
+
+
+@media only screen and (min-width: 48em) {
+    .card {
+        width: 400px !important;
+        margin: 5rem auto 5rem auto !important;
+    }
+}
