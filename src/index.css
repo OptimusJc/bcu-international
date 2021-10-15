@@ -14,8 +14,22 @@
     box-sizing: border-box;
 }
 
+body::after {
+    content: '';
+    background: url('../src/images/BCU\ WEBSITE\ BACKGROUND2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 body {
-    background: center/cover  url("./images/BCU\ WEBSITE\ BACKGROUND2@2x.png");
+    position: relative;
     margin: 0;
     /* font-family: "poppins", sans-serif; */
     font-family: "poppins", sans-serif !important;
