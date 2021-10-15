@@ -19,11 +19,13 @@ const Footer = () => {
             <div className="text-centered">
                 <div className="row">
                     <div className="col-md-3 mt-md-0 mt-3">
-                        <h5 className="text-uppercase">BCU International</h5>
+                        <h5 className="text-uppercase">
+                            BCU International
+                        </h5>
                         <p>We are a move of God.</p>
                     </div>
 
-                    <hr className="clearfix w-100 d-md-none pb-0" />
+                    <hr className="clearfix w-50 w-md-100 d-md-none pb-0" />
 
                     <div className="col-md-3 mb-md-0 mb-3">
                         <h5 className="text-capitalize">About Us</h5>
@@ -73,7 +75,7 @@ const Footer = () => {
                                 <a href="https://www.facebook.com/profile.php?id=100008233095156">
                                     <FontAwesomeIcon
                                         icon={faFacebookF}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>
@@ -84,7 +86,7 @@ const Footer = () => {
                                 <a href="https://www.youtube.com/channel/UC32x9S-LGduGd9Qbc4RAsBQ">
                                     <FontAwesomeIcon
                                         icon={faYoutube}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>
@@ -95,7 +97,7 @@ const Footer = () => {
                                 <a href="">
                                     <FontAwesomeIcon
                                         icon={faInstagram}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>
@@ -106,7 +108,7 @@ const Footer = () => {
                                 <a href="">
                                     <FontAwesomeIcon
                                         icon={faTwitter}
-                                        size={"lg"}
+                                        className="icon"
                                     />
                                 </a>
                             </ListGroup.Item>

@@ -9,13 +9,15 @@
 *,
 *::before,
 *::after {
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
+    box-sizing: border-box;
 }
 
 body {
-    background: top left/cover url("./images/BCU\ WEBSITE\ BACKGROUND2.jpg") !important;
+    background: center/cover  url("./images/BCU\ WEBSITE\ BACKGROUND2@2x.png");
     margin: 0;
     /* font-family: "poppins", sans-serif; */
     font-family: "poppins", sans-serif !important;
+
 }

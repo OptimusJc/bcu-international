@@ -6,7 +6,7 @@ let url = "http://stream.zeno.fm/t904qy1f268uv";
 
 const Radio = () => {
     return (
-        <div>
+        <div className="radio">
             <Card className="text-white ">
                 <Card.Title
                     className="text-center pt-4 pb-2 "

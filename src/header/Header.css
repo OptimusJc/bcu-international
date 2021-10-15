@@ -58,6 +58,14 @@
         padding-top: 1.3rem !important;
         padding-bottom: 1.3rem !important;
     }
+    
+    .searchbar {
+        width: 300px !important;    
+    }
+
+    .btn {
+        width: 300px;
+    }
 }
 
 @media only screen and (min-width: 75em) {
@@ -77,5 +85,11 @@
         background: var(--black) !important;
         color: #fff !important;
         border: 1px solid var(--gold) !important;
+        margin-left: 0.3rem;
+        width: 270px !important;
+    }
+
+    .btn {
+        width: 100px;
     }
 }

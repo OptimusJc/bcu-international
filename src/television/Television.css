@@ -1,0 +1,29 @@
+.video-container {
+    width: 100% !important;
+    height: 250px !important;
+
+}
+
+.television .card {
+    width: auto !important;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+    background: var(--black) !important;
+}
+
+@media only screen and (min-width: 48em) {
+    .video-container {
+        height: 400px !important;
+        width: 600px !important;
+        margin: auto;
+    }
+
+    .television .card {
+        margin-top: 4rem;
+    }
+
+    .spacing {
+        margin-bottom: 10rem;
+    }
+
+}

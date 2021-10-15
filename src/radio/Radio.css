@@ -1,5 +1,5 @@
-.card {
-    width: 500px;
+.radio .card {
+    width: 320px;
     margin: 5rem auto 5rem auto;
     background: var(--black) !important;
 }
@@ -8,4 +8,12 @@
     width: 200px;
     display: block;
     margin: auto;
+}
+
+
+@media only screen and (min-width: 48em) {
+    .radio .card {
+        width: 400px !important;
+        margin: 8rem auto 8rem auto !important;
+    }
 }

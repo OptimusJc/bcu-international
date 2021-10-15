@@ -15,10 +15,10 @@ const SignUp = () => {
                     className="mb-3"
                     controlId="formHorizontalEmail"
                 >
-                    <Form.Label column sm={2} md={2}>
+                    <Form.Label column sm={2} md={3}>
                         Email
                     </Form.Label>
-                    <Col sm={10} md={10} lg={9}>
+                    <Col sm={10} md={9} lg={9}>
                         <Form.Control type="email" placeholder="Email" />
                     </Col>
                 </Form.Group>
@@ -28,10 +28,10 @@ const SignUp = () => {
                     className="mb-3"
                     controlId="formHorizontalTelephone"
                 >
-                    <Form.Label column sm={2} md={2}>
+                    <Form.Label column sm={2} md={3}>
                         Tel
                     </Form.Label>
-                    <Col sm={10} md={10} lg={9}>
+                    <Col sm={10} md={9} lg={9}>
                         <Form.Control type="tel" placeholder="Telephone" />
                     </Col>
                 </Form.Group>
@@ -41,10 +41,10 @@ const SignUp = () => {
                     className="mb-3"
                     controlId="formHorizontalPassword"
                 >
-                    <Form.Label column sm={2} md={2}>
+                    <Form.Label column sm={2} md={3}>
                         Password
                     </Form.Label>
-                    <Col sm={10} md={10} lg={9}>
+                    <Col sm={10} md={9} lg={9}>
                         <Form.Control type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
@@ -56,14 +56,14 @@ const SignUp = () => {
                 >
                     <Col
                         sm={{ span: 4, offset: 2 }}
-                        md={{ span: 4, offset: 2 }}
+                        md={{ span: 5, offset: 0 }}
                     >
                         <Form.Check label="Remember me" />
                     </Col>
                     <Col
                         sm={{ span: 4, offset: 2 }}
-                        md={{ span: 4, offset: 2 }}
-                        className="signup"
+                        md={{ span: 2, offset: 2 }}
+                        // className="signup"
                     >
                         <Button type="submit" className="btn btn-warning">
                             Sign Up

@@ -1,3 +1,54 @@
 .col {
     border: 1px solid var(--gold);
 }
+
+.tv-box {
+    height: 350px;
+}
+
+.coming-soon {
+    height: 150px;
+    margin-bottom: 2rem;
+}
+
+.coming-soon .col p {
+    padding-top: 2rem;
+    font-size: 2.3rem;
+}
+.coming-soon p .lead {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 48em) {
+    .tv-box, .coming-soon .col {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+    .tv-box {
+        height: 550px;
+    }
+
+    .coming-soon .col {
+        border: none;
+    }
+
+}
+
+
+/* desktop devices  */
+@media only screen and (min-width: 75em) {
+    .home .column {
+        display: flex;
+    }
+    
+    .home .column .row:first-child {
+        flex: 2 !important;
+        margin-bottom: 2rem;
+    }
+
+    .coming-soon .col p {
+        line-height: 550px;
+    }
+}
