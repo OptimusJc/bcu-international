@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import db from "../firebase";
-import ReactPlayer from "react-player";
 import "./Video.css";
 
 
@@ -8,6 +7,7 @@ import "./Video.css";
 const Videos = () => {
     const [videos, setVideos] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+    
 
     useEffect(() => {
         fetchAll();
@@ -28,25 +28,31 @@ const Videos = () => {
                 }
             });
     }
+    
+    // * filtered videos 
+    const filterVideos = (videos_list, searchTerm) => {
+        if(!searchTerm) return videos_list;
+        
+        return videos_list.filter(video => {
+            const videoTag = video.mediaId.toLowerCase();
+            return videoTag.includes(searchTerm);
+        }) 
+    }
 
-
+    const filtered_videos = filterVideos(videos, searchTerm);
+    console.log(filtered_videos);
 
     return (
         <div className="container-video">
         <input type="text"
         style={{color: 'black'}}
         placeholder="search..." onChange={(event)=>{
+            event.preventDefault();
+ 
             setSearchTerm(event.target.value);
         }}/>
-            {videos.filter((doc)=>{
-                if(searchTerm==""){
-                    return doc
-                }
-                else if(doc.title.toLowerCase().includes(searchTerm.toLowerCase())||doc.subtitle.toLowerCase().includes(searchTerm.toLowerCase())){
-                         return  doc
-                  
-            }})
-            .map((doc, index) => {
+            
+            {videos.map((doc, index) => {
                 return (
                     <div key={index}>
                         <video controls width="200" className="videos">
