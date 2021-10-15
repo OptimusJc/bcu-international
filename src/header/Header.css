@@ -38,18 +38,26 @@
     color: var(--gold) !important;
 }
 
-/* .btn.btn-warning:hover {
-    background: var(--gold-tint-1) !important;
-} */
-
 @media only screen and (min-width: 48em) {
-    .brand-logo {
-        width: 250px;
-        height: 50px;
+    *,
+    *::before,
+    *::after {
+        font-size: 0.9rem;
     }
-    /* form.searchbar {
-        background: red !important;
-    } */
+    .brand-logo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .navbar-expand-lg .navigation {
+        margin-left: 0 !important;
+    }
+
+    .searchbar {
+        width: 230px !important;
+        padding-top: 1.3rem !important;
+        padding-bottom: 1.3rem !important;
+    }
 }
 
 @media only screen and (min-width: 75em) {

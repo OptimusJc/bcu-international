@@ -28,7 +28,7 @@ const Header = () => (
                     Podcasts
                 </Nav.Link>
                 <Nav.Link as={Link} to="/videos">
-                    Videos on Demand
+                    Videos
                 </Nav.Link>
 
                 <NavDropdown title="Channels" id="navbarScrollingDropdown">
