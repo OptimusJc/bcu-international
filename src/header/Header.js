@@ -5,7 +5,7 @@ import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { FormControl } from "react-bootstrap";
 
-import logo from "../../src/logo.png";
+import logo from "../../src/images/bcu_logo.webp";
 import "./Header.css";
 import { Link } from "@reach/router";
 
@@ -45,6 +45,8 @@ const Header = () => (
                     </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
+            
+            {/* searchbar */}
             <Form className="d-flex my-3 mr-lg-5">
                 <FormControl
                     type="search"

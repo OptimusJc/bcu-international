@@ -1,13 +1,13 @@
 .brand-logo {
-    width: 150px;
-    height: 40px;
+    width: 120px;
+    height: 60px;
 }
 
 .dropdown-menu {
     background: var(--black) !important;
 }
 .dropdown-menu a:hover {
-    background: var(--gold-tint-1-transparent) !important;
+    background: var(--blue) !important;
 }
 
 .navbar {
@@ -20,33 +20,44 @@
     color: #fff !important;
 }
 
-/* .searchbar {
-    width: 300px !important;
-    margin-left: 0 !important;
-} */
+.searchbar {
+    border: 1px solid var(--blue-transparent) !important;
+}
+
 .navButtons {
     margin-left: 0 !important;
     margin-right: 0 !important;
+    color: #fff !important;
+    
+}
+
+.navButtons:hover {
+    border: none !important;
 }
 
 .btn.btn-warning {
-    background: var(--gold) !important;
-    color: var(--black) !important;
+    background: var(--blue) !important;
+    border: 1px solid var(--blue);
+    /* color: var(--black) !important; */
 }
-.btn.btn-outline-warning {
-    border: 2px solid var(--gold) !important;
-    color: var(--gold) !important;
+.btn.btn-outline-warning,
+.btn.btn-outline-warning:hover {
+    border: 1px solid var(--blue-shade-1) !important;
+    background: var(--blue-shade-1) !important;
+    color: #fff !important;
 }
 
+
 @media only screen and (min-width: 48em) {
-    *,
+    /* *,
     *::before,
     *::after {
         font-size: 0.9rem;
-    }
+    } */
+
     .brand-logo {
-        width: 200px;
-        height: 40px;
+        width: 130px;
+        height: 70px;
     }
 
     .navbar-expand-lg .navigation {
@@ -74,22 +85,25 @@
     *::after {
         font-size: 1rem;
     }
+
     .brand-logo {
-        width: 300px;
-        height: 60px;
+        width: 280px;
+        height: 130px;
+
     }
+
     .dropdown-menu {
         background: var(--black) !important;
     }
     .dropdown-menu a:hover {
         /* background: rgba(255, 255, 255, 0.6) !important; */
-        background: var(--gold-tint-1-transparent) !important;
+        background: var(--blue-transparent) !important;
     }
 
     .searchbar {
         background: var(--black) !important;
         color: #fff !important;
-        border: 1px solid var(--gold) !important;
+        border: 1px solid var(--blue) !important;
         margin-left: 0.3rem;
         width: 270px !important;
     }

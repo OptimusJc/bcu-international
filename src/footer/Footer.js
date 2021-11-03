@@ -118,7 +118,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-copyright text-center py-3">
-                © 2021 Copyright: BCU-International
+                Copyright © 2021: BCU-International
             </div>
         </footer>
     );

@@ -1,11 +1,11 @@
 :root {
-    --gold: hsla(48, 100%, 44%, 1);
-    --gold-tint-1: hsl(40, 100%, 60%);
-    --gold-tint-1-light: hsla(48, 100%, 96%, 1);
-    --gold-tint-1-transparent: hsla(48, 100%, 96%, 0.4);
-    --black: hsla(0, 0%, 0%, 1);
+    --blue: hsl(210, 100%, 38%);
+    --blue-tint-1: hsl(217, 81%, 42%);
+    --blue-shade-1: hsl(208, 38%, 18%);
+    --blue-transparent: hsl(210, 100%, 58%);
+    --black: hsl(208, 39%, 6%);
 }
-
+/* 0061c0 */
 *,
 *::before,
 *::after {
@@ -14,24 +14,16 @@
     box-sizing: border-box;
 }
 
-body::after {
-    content: '';
-    background: url('../src/images/BCU\ WEBSITE\ BACKGROUND2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
 body {
     position: relative;
     margin: 0;
-    /* font-family: "poppins", sans-serif; */
     font-family: "poppins", sans-serif !important;
+    
+}
 
+.image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }

@@ -1,7 +1,10 @@
-.col {
-    border: 1px solid var(--gold);
-}
+/* .col {
+    border: 1px solid var(--blue);
+} */
 
+.heading-2 {
+    color: #fff;
+}
 .tv-box {
     height: 350px;
 }
@@ -36,7 +39,6 @@
 
 }
 
-
 /* desktop devices  */
 @media only screen and (min-width: 75em) {
     .home .column {
@@ -44,7 +46,8 @@
     }
     
     .home .column .row:first-child {
-        flex: 2 !important;
+        /* flex: 2 !important; */
+        flex: 1 !important;
         margin-bottom: 2rem;
     }
 

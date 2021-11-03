@@ -23,7 +23,7 @@ const Home = () => {
                 </Col>
             </Row>
             </div>
-            <h2 style={{ color: "gold" }}>
+            <h2 className="heading-2">
                 Body of Christ International Videos on Demand
             </h2>
             <Videos />
