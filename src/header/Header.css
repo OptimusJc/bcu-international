@@ -7,7 +7,7 @@
     background: var(--black) !important;
 }
 .dropdown-menu a:hover {
-    background: var(--blue) !important;
+    background: var(--gold-variety-1) !important;
 }
 
 .navbar {
@@ -21,14 +21,14 @@
 }
 
 .searchbar {
-    border: 1px solid var(--blue-transparent) !important;
+    border: 1px solid var(--gold-variety-1) !important;
 }
 
 .navButtons {
     margin-left: 0 !important;
     margin-right: 0 !important;
     color: #fff !important;
-    
+    border-radius: 2px !important;
 }
 
 .navButtons:hover {
@@ -37,15 +37,30 @@
 
 .btn.btn-warning,
 .btn.btn-warning:active {
-    background: var(--blue) !important;
-    border: 1px solid var(--blue);
+    /* ? gold rendition 1 */
+    background-image: linear-gradient(to left,
+                        var(--gold-primary),
+                        var(--gold-light-1),
+                        var(--gold-dark),
+                        var(--gold-light-1),
+                        var(--gold-primary)) !important;
+                        color: var(--black) !important;
+                        font-weight: bold;
+/* 
+    background-image: linear-gradient(to left,
+                        var(--gold-secondary),
+                        var(--gold-primary),
+                        var(--gold-dark),
+                        var(--gold-primary),
+                        var(--gold-secondary)) !important; */
+    border: 1px solid var(--gold-variety-1);
 }
 
 .btn.btn-outline-warning,
 .btn.btn-outline-warning:hover,
 .btn.btn-outline-warning:active {
-    border: 1px solid var(--blue-shade-1) !important;
-    background: var(--blue-shade-1) !important;
+    border: 1px solid var(--gold-variety-1) !important;
+    /* background: var(--blue-shade-1) !important; */
     color: #fff !important;
 }
 
@@ -65,10 +80,10 @@
         padding-top: 1.3rem !important;
         padding-bottom: 1.3rem !important;
     }
-    
-    .searchbar {
+    /* ? Figure out what this affects */
+    /* .searchbar {
         width: 300px !important;    
-    }
+    } */
 
     .btn {
         width: 300px;
@@ -85,13 +100,13 @@
         background: var(--black) !important;
     }
     .dropdown-menu a:hover {
-        background: var(--blue-transparent) !important;
+        background: var(--gold-variety-1) !important;
     }
 
     .searchbar {
         background: var(--black) !important;
         color: #fff !important;
-        border: 1px solid var(--blue) !important;
+        border: 1px solid var(--gold-variety-1) !important;
         margin-left: 0.3rem;
         width: 270px !important;
     }

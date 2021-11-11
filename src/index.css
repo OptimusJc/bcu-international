@@ -1,9 +1,27 @@
 :root {
-    --blue: hsl(210, 100%, 38%);
+    /* --blue: hsl(210, 100%, 38%);
     --blue-tint-1: #1457c2;
     --blue-shade-1: hsl(208, 38%, 18%);
-    --blue-transparent: #2994ff;
-    --black: hsl(208, 39%, 6%);
+    --blue-transparent: #2994ff; */
+
+    /* * custom gold colors  */
+    /* --gold-variety-light: #F2D479;
+    --gold-variety-1: #F2B138;
+    --gold-variety-2: #D98A29;
+    --gold-variety-dark: #59380E; */
+    --black: #091015;
+
+    /* * color schemes 1[that works]  */
+    --gold-primary: #bf953f;
+    --gold-secondary: #b38728;
+    --gold-light-1: #fcf6ba;
+    --gold-light-2: #fbf5b7;
+    --gold-dark: #aa771c;
+
+    /* --gold-light: #F2D479;
+    --gold-primary: #f2b138;
+    --gold-secondary: #D98A29;
+    --gold-dark: #59380E; */
 }
 /* 0061c0 */
 *,
