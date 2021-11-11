@@ -11,10 +11,10 @@ const Television = () => {
                     NESBIT TELEVISION
                 </Card.Title>
                 <ReactPlayer className="video-container"
-                    url={[
-                        "https://www.youtube.com/watch?v=QuB5JoX063Q",
-                        "https://www.youtube.com/watch?v=jNgP6d9HraI",
-                    ]}
+                    url={
+                        
+                        "https://video.wixstatic.com/video/889011_185a9a86819e493fa94c43a9ac817769/480p/mp4/file.mp4"
+                    }
                 />
             </Card>
             <div className="spacing"></div>

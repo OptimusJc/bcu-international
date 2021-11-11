@@ -9,7 +9,7 @@ const Home = () => {
             <div className="column">
             <Row >
                 <Col className="tv-box">
-                    <Television />
+                    <Television  />
                 </Col>
                 
             </Row>
@@ -26,7 +26,12 @@ const Home = () => {
             <h2 className="heading-2">
                 Body of Christ International Videos on Demand
             </h2>
-            <Videos />
+            {/* <Videos /> */}
+            <ul>
+                <li>
+                  <img src="../images/bcu_logo.webp" />
+                </li>
+            </ul>
         </div>
     );
 };

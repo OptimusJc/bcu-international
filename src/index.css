@@ -1,8 +1,8 @@
 :root {
     --blue: hsl(210, 100%, 38%);
-    --blue-tint-1: hsl(217, 81%, 42%);
+    --blue-tint-1: #1457c2;
     --blue-shade-1: hsl(208, 38%, 18%);
-    --blue-transparent: hsl(210, 100%, 58%);
+    --blue-transparent: #2994ff;
     --black: hsl(208, 39%, 6%);
 }
 /* 0061c0 */

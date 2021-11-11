@@ -35,13 +35,15 @@
     border: none !important;
 }
 
-.btn.btn-warning {
+.btn.btn-warning,
+.btn.btn-warning:active {
     background: var(--blue) !important;
     border: 1px solid var(--blue);
-    /* color: var(--black) !important; */
 }
+
 .btn.btn-outline-warning,
-.btn.btn-outline-warning:hover {
+.btn.btn-outline-warning:hover,
+.btn.btn-outline-warning:active {
     border: 1px solid var(--blue-shade-1) !important;
     background: var(--blue-shade-1) !important;
     color: #fff !important;
@@ -49,15 +51,9 @@
 
 
 @media only screen and (min-width: 48em) {
-    /* *,
-    *::before,
-    *::after {
-        font-size: 0.9rem;
-    } */
-
     .brand-logo {
-        width: 130px;
-        height: 70px;
+        width: 150px;
+        height: 80px;
     }
 
     .navbar-expand-lg .navigation {
@@ -80,23 +76,15 @@
 }
 
 @media only screen and (min-width: 75em) {
-    *,
-    *::before,
-    *::after {
-        font-size: 1rem;
-    }
-
     .brand-logo {
         width: 280px;
         height: 130px;
-
     }
 
     .dropdown-menu {
         background: var(--black) !important;
     }
     .dropdown-menu a:hover {
-        /* background: rgba(255, 255, 255, 0.6) !important; */
         background: var(--blue-transparent) !important;
     }
 
@@ -111,4 +99,11 @@
     .btn {
         width: 100px;
     }
+
+    .navbar-nav a {
+        border-bottom: 1px solid transparent;
+    }
+    /* .navbar-nav:not(a:last-child):hover  {
+        border-bottom: 2px solid var(--blue);
+    } */
 }

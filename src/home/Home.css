@@ -46,12 +46,42 @@
     }
     
     .home .column .row:first-child {
-        /* flex: 2 !important; */
         flex: 1 !important;
         margin-bottom: 2rem;
+        height: auto;
     }
 
     .coming-soon .col p {
         line-height: 550px;
+        word-wrap: break-all;
+        width: 300px;
+        font-size: 1.8rem;
+        /* margin-left: -1rem; */
+    }
+
+    .coming-soon p .lead {
+        padding-left: 1rem;
+        font-size: 0.8rem;
+       
+    }
+    
+    .coming-soon {
+        width: 360px;
+        word-break: break-all;
+    }
+
+    .tv-box {
+        width: 600px !important;
+        overflow: hidden;
+    }
+    .tv-box .card-title {
+        display: none;
+    }
+    .tv-box .card {
+        margin-top: 0;
+        margin-right: 0 !important;
+    }
+    .tv-box iframe {
+        width: 900px !important;
     }
 }

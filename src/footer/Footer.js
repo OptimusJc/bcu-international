@@ -22,7 +22,9 @@ const Footer = () => {
                         <h5 className="text-uppercase">
                             BCU International
                         </h5>
-                        <p>We are a move of God.</p>
+                        <blockquote>
+                            <cite>We are a move of God</cite>
+                        </blockquote>
                     </div>
 
                     <hr className="clearfix w-50 w-md-100 d-md-none pb-0" />
