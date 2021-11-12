@@ -6,12 +6,12 @@ import "./Home.css";
 const Home = () => {
     return (
         <div className="home" style={{ marginBottom: "3rem" }}>
-            <div>
-                <h6>
+            <div className="live-section">
+                <p>
                     live
-                </h6>
+                </p>
                 <h3>
-                    the body of christ united global international ministries
+                    The body of christ united global international ministries
                 </h3>
                 <button className="btn btn-primary"> share this page</button>
             </div>

@@ -89,6 +89,7 @@
 }
 
 @media only screen and (min-width: 75em) {
+
     .brand-logo {
         width: 280px;
         height: 130px;
@@ -128,6 +129,8 @@
         /* * align navigation at the top  */
         display: flex;
         align-items: flex-start;
+        height: 180px;
+        position: relative !important;
     }
 
 }
