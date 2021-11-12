@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import { FormControl } from "react-bootstrap";
 
 import logo from "../../src/images/bcu_logo.webp";
+// import backgroundStrip from "../../src/images/BCU London Universe STRIP.jpg";
 import "./Header.css";
 import { Link } from "@reach/router";
 
@@ -14,6 +15,7 @@ const Header = () => (
         <Navbar.Brand href="#">
             <img src={logo} alt="logo" className="brand-logo" />
         </Navbar.Brand>
+        {/* <img src={backgroundStrip} alt="background strip" className="backgroundStrip" /> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
             <Nav

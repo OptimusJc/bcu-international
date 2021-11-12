@@ -1,13 +1,10 @@
 .brand-logo {
-    width: 120px;
-    height: 60px;
+    width: 130px;
+    height: 70px;
 }
 
 .dropdown-menu {
     background: var(--black) !important;
-}
-.dropdown-menu a:hover {
-    background: var(--gold-variety-1) !important;
 }
 
 .navbar {
@@ -21,7 +18,9 @@
 }
 
 .searchbar {
-    border: 1px solid var(--gold-variety-1) !important;
+    border: 1px solid var(--gold-dark) !important;
+    color: #fff !important;
+    background: var(--black) ;
 }
 
 .navButtons {
@@ -29,6 +28,10 @@
     margin-right: 0 !important;
     color: #fff !important;
     border-radius: 2px !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    text-transform: capitalize !important;
+    font-weight: bold !important;
 }
 
 .navButtons:hover {
@@ -45,7 +48,7 @@
                         var(--gold-light-1),
                         var(--gold-primary)) !important;
                         color: var(--black) !important;
-                        font-weight: bold;
+                        
 /* 
     background-image: linear-gradient(to left,
                         var(--gold-secondary),
@@ -53,14 +56,13 @@
                         var(--gold-dark),
                         var(--gold-primary),
                         var(--gold-secondary)) !important; */
-    border: 1px solid var(--gold-variety-1);
+    border: 1px solid var(--gold-primary);
 }
 
 .btn.btn-outline-warning,
 .btn.btn-outline-warning:hover,
 .btn.btn-outline-warning:active {
-    border: 1px solid var(--gold-variety-1) !important;
-    /* background: var(--blue-shade-1) !important; */
+    border: 2px solid var(--gold-dark) !important;
     color: #fff !important;
 }
 
@@ -76,14 +78,10 @@
     }
 
     .searchbar {
-        width: 230px !important;
+        width: 300px !important;
         padding-top: 1.3rem !important;
         padding-bottom: 1.3rem !important;
     }
-    /* ? Figure out what this affects */
-    /* .searchbar {
-        width: 300px !important;    
-    } */
 
     .btn {
         width: 300px;
@@ -96,19 +94,20 @@
         height: 130px;
     }
 
-    .dropdown-menu {
-        background: var(--black) !important;
-    }
-    .dropdown-menu a:hover {
-        background: var(--gold-variety-1) !important;
+    /* * gives the links a white background and gold color  */
+    .navbar .nav-link:not(.navButtons:nth-last-child(2)):hover {
+        background: #fff;
+        color: var(--gold-primary) !important;
     }
 
+.dropdown-menu a:hover {
+    color: var(--gold-primary) !important;
+    background: #fff;
+}
+
     .searchbar {
-        background: var(--black) !important;
-        color: #fff !important;
-        border: 1px solid var(--gold-variety-1) !important;
         margin-left: 0.3rem;
-        width: 270px !important;
+        width: 230px !important;
     }
 
     .btn {
@@ -118,7 +117,17 @@
     .navbar-nav a {
         border-bottom: 1px solid transparent;
     }
-    /* .navbar-nav:not(a:last-child):hover  {
-        border-bottom: 2px solid var(--blue);
-    } */
+   
+    .navbar {
+        background-image: url('../images/BCU\ London\ Universe\ STRIP.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--gold-dark);
+
+        /* * align navigation at the top  */
+        display: flex;
+        align-items: flex-start;
+    }
+
 }
