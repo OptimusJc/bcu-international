@@ -1,7 +1,3 @@
-/* .col {
-    border: 1px solid var(--blue);
-} */
-
 .heading-2 {
     color: #fff;
 }
@@ -21,6 +17,33 @@
 .coming-soon p .lead {
     padding-left: 1rem;
     font-size: 1rem;
+}
+
+.home .live-section p {
+    display: none;
+}
+
+/* * share button  */
+.home .live-section button {
+    display: block;
+    outline: none !important;
+    border: var(--gold-hue);
+    background-image: linear-gradient(to left,
+    var(--gold-primary),
+    var(--gold-light-1),
+    var(--gold-dark),
+    var(--gold-light-1),
+    var(--gold-primary)) !important;
+    
+    color: var(--black) !important;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    width: 140px !important;
+    margin-left: 0;
+    margin-top: 1rem;
+}
+.home .live-section button:focus {
+    box-shadow: 0 0 0 0.2rem var(--gold-hue);
 }
 
 @media only screen and (min-width: 48em) {
@@ -57,28 +80,10 @@
 
     .home .live-section h3 {
         text-transform: capitalize;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         display: inline;
         padding-left: 1rem;
     }
-
-    .home .live-section button {
-        display: block;
-        background-image: linear-gradient(to left,
-        var(--gold-primary),
-        var(--gold-light-1),
-        var(--gold-dark),
-        var(--gold-light-1),
-        var(--gold-primary)) !important;
-        
-        color: var(--black) !important;
-        font-size: 0.9rem;
-        text-transform: capitalize;
-        width: 140px !important;
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
 
     .home .column {
         display: flex;

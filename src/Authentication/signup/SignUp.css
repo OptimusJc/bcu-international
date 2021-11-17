@@ -1,19 +1,39 @@
-.form-control,
+/* .form-control,
 .form-control:focus {
     background: none !important;
 }
 
 .form-control {
-    border: 1px solid var(--blue-tint-1) !important;
+    border: 1px solid var(--gold-dark) !important;
     outline: none !important;
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
-    color: var(--gold-tint-1-light) !important;
+    color: var(--gold-light) !important;
 }
 
 .btn-primary {
-    color: #fff !important;
+    font-weight: bold !important;
+    width: 100px;
+    padding: 10px !important;
+    margin-left: 0 !important;
+} */
+
+.login h4 {
+    color: var(--gold-primary);
 }
+
+.form-control {
+    background: var(--black) !important;
+    color: #fff !important;
+    outline: none !important;
+    border-color: var(--gold-dark) !important;
+}
+
+.form-control:focus {
+    /* box-shadow: rgba(191, 149, 63,.3) !important; */
+    box-shadow: 0 0 0 0.2rem var(--gold-hue) !important;
+}
+
 
 /* come back take a look at this crap */
 @media only screen and (min-width: 48em) {
@@ -38,12 +58,13 @@
 @media only screen and (min-width: 75em) {
     .form,
     .form-login {
-        border: 2px solid var(--gold);
-        height: 350px;
+        border: 2px solid var(--gold-dark);
+        height: 330px;
         width: 550px;
         padding: 3rem 1rem 0 2rem;
         margin: auto;
     }
+
     .signup {
         margin-top: 4rem;
         margin-bottom: 9rem;
@@ -62,7 +83,12 @@
         padding-bottom: 1.5rem !important;
     }
 
-    .main {
+    /* .main {
         min-height: 600px;
+    } */
+
+    /* ? give the button a left margin  */
+    .btn-align {
+        margin-left: 2.8rem !important;
     }
 }

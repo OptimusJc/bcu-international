@@ -10,6 +10,7 @@ const Login = () => {
             <p className="text-center">to continue to BCU TV</p>
 
             <Form className="form form-login">
+                
                 <Form.Group
                     as={Row}
                     className="mb-3"
@@ -52,11 +53,12 @@ const Login = () => {
                         md={{ span: 2, offset: 2 }}
                         className="signup"
                     >
-                        <Button type="submit" className="btn btn-warning">
+                        <Button type="submit" className="btn btn-warning btn-align">
                             Log In
                         </Button>
                     </Col>
                 </Form.Group>
+                
             </Form>
         </div>
     );

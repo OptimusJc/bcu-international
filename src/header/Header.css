@@ -28,8 +28,8 @@
     margin-right: 0 !important;
     color: #fff !important;
     border-radius: 2px !important;
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
+    padding-top: 0.625rem !important;
+    padding-bottom: 0.625rem !important;
     text-transform: capitalize !important;
     font-weight: bold !important;
 }
@@ -89,6 +89,10 @@
 }
 
 @media only screen and (min-width: 75em) {
+    /* * moves the navbarScroll to the top of the header container  */
+    #navbarScroll {
+        margin-top: -7rem;
+    }
 
     .brand-logo {
         width: 280px;
@@ -126,7 +130,7 @@
         background-size: cover;
         background-color: var(--gold-dark);
 
-        /* * align navigation at the top  */
+        /* * align navigation at the top  */;
         display: flex;
         align-items: flex-start;
         height: 180px;
