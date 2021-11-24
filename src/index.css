@@ -1,7 +1,8 @@
 :root {
     /* * custom colors  */
-    --black: #091015;
+    /* --black: #091015; */
     --custom-black: #0A1117;
+    --custom-black2: #0F181D;
 
     /* * gold color schemes 1[that works]  */
     --gold-primary: #bf953f;

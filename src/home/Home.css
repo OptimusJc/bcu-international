@@ -35,16 +35,39 @@
     var(--gold-light-1),
     var(--gold-primary)) !important;
     
-    color: var(--black) !important;
+    color: var(--custom-black) !important;
     font-size: 0.9rem;
     text-transform: capitalize;
     width: 140px !important;
     margin-left: 0;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .home .live-section button:focus {
     box-shadow: 0 0 0 0.2rem var(--gold-hue);
 }
+
+ /* custom video list   */
+ .video_list {
+    height: 800px;
+    overflow: scroll;
+    list-style-type: none;
+    padding: 0;
+}
+.video_list .video_image {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+.video_list span {
+    display: none;
+}
+
+.video_list li p {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+} 
+
 
 @media only screen and (min-width: 48em) {
     .tv-box, .coming-soon .col {
@@ -54,10 +77,17 @@
     
     .tv-box {
         height: 550px;
+        margin-top: -2rem !important;
     }
 
+    .coming-soon { margin-bottom: 0; }
     .coming-soon .col {
-        border: none;
+        height: 100px;
+    }
+
+    .home .live-section h3 {
+        width: 600px;
+        word-wrap: break-all;
     }
 
 }
@@ -127,5 +157,40 @@
     }
     .tv-box iframe {
         width: 900px !important;
+    }
+
+
+    /* custom video list   */
+    .video_list {
+        height: 150px;
+        width: 700px;
+        overflow-y: scroll;
+    }
+    .video_list .video_image {
+        width: 100px !important;
+        height: 50px !important;
+    }
+    .video_list li {
+        list-style-type: none;
+        margin-bottom: 0.4rem;
+    }
+    .video_list span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-right: 1rem;
+    }
+    .video_list .live {
+        font-weight: bold;
+        font-size: 0.7rem;
+        border: 1px solid var(--gold-primary);
+        text-transform: uppercase;
+        padding: 0.1rem;
+        margin-left: 1rem;
+        letter-spacing: 0.1rem;
+        
+    }
+    .video_list li p {
+        display: inline-block;
+        margin-left: 1rem;
     }
 }

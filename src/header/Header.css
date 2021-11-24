@@ -47,7 +47,7 @@
                         var(--gold-dark),
                         var(--gold-light-1),
                         var(--gold-primary)) !important;
-                        color: var(--black) !important;
+                        color: var(--custom-black) !important;
                         
 /* 
     background-image: linear-gradient(to left,
