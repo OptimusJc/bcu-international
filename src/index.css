@@ -12,11 +12,9 @@
     --gold-dark: #aa771c;
     --gold-hue: rgba(179, 135, 40, 0.3);
 
-    /* * gold color scheme 2 */
-    /* --gold-light: #F2D479;
-    --gold-primary: #f2b138;
-    --gold-secondary: #D98A29;
-    --gold-dark: #59380E; */
+   /* * socail icon colors  */
+   --facebook: #3A558C;
+   --twitter: #05C7F2;
 }
 
 *,

@@ -20,7 +20,7 @@ const Header = () => (
         <Navbar.Collapse id="navbarScroll">
             <Nav
                 className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
-                style={{ maxHeight: "150px" }}
+                style={{ maxHeight: "150px"}}
                 navbarScroll
             >
                 <Nav.Link as={Link} to="/">

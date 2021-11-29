@@ -53,6 +53,8 @@
     overflow: scroll;
     list-style-type: none;
     padding: 0;
+    background: var(--custom-black2);
+
 }
 .video_list .video_image {
     width: 100% !important;
@@ -90,10 +92,31 @@
         word-wrap: break-all;
     }
 
+    /* ! come back to this  */
+    .video_list {
+        height: 250px;
+        width: 700px;
+        overflow-y: scroll;
+    }
+    .video_list .video_image {
+        width: 120px !important;
+        height: 60px !important;
+        margin-left: 1rem;
+    }
+    .video_list li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .video_list li p {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
 }
 
 /* desktop devices  */
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 64em) {
     /* ? styling for the live heading section  */
     .home .live-section {
         position: absolute;
@@ -120,7 +143,7 @@
     }
     
     .home .column .row:first-child {
-        flex: 1 !important;
+        flex: 2;
         margin-bottom: 2rem;
         height: auto;
     }
@@ -136,7 +159,6 @@
     .coming-soon p .lead {
         padding-left: 1rem;
         font-size: 0.8rem;
-       
     }
     
     .coming-soon {
@@ -146,6 +168,7 @@
 
     .tv-box {
         width: 600px !important;
+        margin-top: 2rem !important;
         overflow: hidden;
     }
     .tv-box .card-title {
@@ -158,39 +181,14 @@
     .tv-box iframe {
         width: 900px !important;
     }
+}
 
+@media only screen and (min-width: 87em) {
+    .coming-soon { 
+        flex: 1;
+    }
 
-    /* custom video list   */
-    .video_list {
-        height: 150px;
-        width: 700px;
-        overflow-y: scroll;
-    }
-    .video_list .video_image {
-        width: 100px !important;
-        height: 50px !important;
-    }
-    .video_list li {
-        list-style-type: none;
-        margin-bottom: 0.4rem;
-    }
-    .video_list span {
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding-right: 1rem;
-    }
-    .video_list .live {
-        font-weight: bold;
-        font-size: 0.7rem;
-        border: 1px solid var(--gold-primary);
-        text-transform: uppercase;
-        padding: 0.1rem;
-        margin-left: 1rem;
-        letter-spacing: 0.1rem;
-        
-    }
-    .video_list li p {
-        display: inline-block;
-        margin-left: 1rem;
+    .tv-box .television .video-container {
+        margin-left: -1.3rem;
     }
 }
