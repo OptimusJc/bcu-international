@@ -4,7 +4,7 @@ import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { FormControl } from "react-bootstrap";
 
-import logo from "../../public/images/bcu_logo.webp";
+import logo from "../images/bcu_logo.webp";
 import "./Header.css";
 import { Link } from "@reach/router";
 
