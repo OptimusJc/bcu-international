@@ -1,9 +1,20 @@
 :root {
-    --gold: hsla(48, 100%, 44%, 1);
-    --gold-tint-1: hsl(40, 100%, 60%);
-    --gold-tint-1-light: hsla(48, 100%, 96%, 1);
-    --gold-tint-1-transparent: hsla(48, 100%, 96%, 0.4);
-    --black: hsla(0, 0%, 0%, 1);
+    /* * custom colors  */
+    /* --black: #091015; */
+    --custom-black: #0A1117;
+    --custom-black2: #0F181D;
+
+    /* * gold color schemes 1[that works]  */
+    --gold-primary: #bf953f;
+    --gold-secondary: #b38728;
+    --gold-light-1: #fcf6ba;
+    --gold-light-2: #fbf5b7;
+    --gold-dark: #aa771c;
+    --gold-hue: rgba(179, 135, 40, 0.3);
+
+   /* * socail icon colors  */
+   --facebook: #3A558C;
+   --twitter: #05C7F2;
 }
 
 *,
@@ -14,24 +25,29 @@
     box-sizing: border-box;
 }
 
-body::after {
-    content: '';
-    background: url('../src/images/BCU\ WEBSITE\ BACKGROUND2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
 body {
     position: relative;
     margin: 0;
-    /* font-family: "poppins", sans-serif; */
     font-family: "poppins", sans-serif !important;
-
+    background: var(--custom-black) !important;
 }
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* .image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+} */

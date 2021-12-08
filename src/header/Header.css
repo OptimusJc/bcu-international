@@ -1,13 +1,10 @@
 .brand-logo {
-    width: 150px;
-    height: 40px;
+    width: 130px;
+    height: 70px;
 }
 
 .dropdown-menu {
     background: var(--black) !important;
-}
-.dropdown-menu a:hover {
-    background: var(--gold-tint-1-transparent) !important;
 }
 
 .navbar {
@@ -20,33 +17,53 @@
     color: #fff !important;
 }
 
-/* .searchbar {
-    width: 300px !important;
-    margin-left: 0 !important;
-} */
+.searchbar {
+    border: 1px solid var(--gold-dark) !important;
+    color: #fff !important;
+    background: var(--black) ;
+}
+
 .navButtons {
     margin-left: 0 !important;
     margin-right: 0 !important;
+    color: #fff !important;
+    border-radius: 2px !important;
+    padding-top: 0.625rem !important;
+    padding-bottom: 0.625rem !important;
+    text-transform: capitalize !important;
+    font-weight: bold !important;
 }
 
-.btn.btn-warning {
-    background: var(--gold) !important;
-    color: var(--black) !important;
+.navButtons:hover {
+    border: none !important;
 }
-.btn.btn-outline-warning {
-    border: 2px solid var(--gold) !important;
-    color: var(--gold) !important;
+
+.btn.btn-warning,
+.btn.btn-warning:active {
+    /* ? gold rendition 1 */
+    background-image: linear-gradient(to left,
+                        var(--gold-primary),
+                        var(--gold-light-1),
+                        var(--gold-dark),
+                        var(--gold-light-1),
+                        var(--gold-primary)) !important;
+                        color: var(--custom-black) !important;
+                        
+    border: 1px solid var(--gold-primary);
 }
+
+.btn.btn-outline-warning,
+.btn.btn-outline-warning:hover,
+.btn.btn-outline-warning:active {
+    border: 2px solid var(--gold-dark) !important;
+    color: #fff !important;
+}
+
 
 @media only screen and (min-width: 48em) {
-    *,
-    *::before,
-    *::after {
-        font-size: 0.9rem;
-    }
     .brand-logo {
-        width: 200px;
-        height: 40px;
+        width: 150px;
+        height: 80px;
     }
 
     .navbar-expand-lg .navigation {
@@ -54,13 +71,9 @@
     }
 
     .searchbar {
-        width: 230px !important;
+        width: 300px !important;
         padding-top: 1.3rem !important;
         padding-bottom: 1.3rem !important;
-    }
-    
-    .searchbar {
-        width: 300px !important;    
     }
 
     .btn {
@@ -68,33 +81,53 @@
     }
 }
 
-@media only screen and (min-width: 75em) {
-    *,
-    *::before,
-    *::after {
-        font-size: 1rem;
-    }
-    .brand-logo {
-        width: 300px;
-        height: 60px;
-    }
-    .dropdown-menu {
-        background: var(--black) !important;
-    }
-    .dropdown-menu a:hover {
-        /* background: rgba(255, 255, 255, 0.6) !important; */
-        background: var(--gold-tint-1-transparent) !important;
+@media only screen and (min-width: 64em) {
+    /* * moves the navbarScroll to the top of the header container  */
+    #navbarScroll {
+        margin-top: -7rem;
     }
 
+    .brand-logo {
+        width: 280px;
+        height: 130px;
+    }
+
+    /* * gives the links a white background and gold color  */
+    .navbar .nav-link:not(.navButtons:nth-last-child(2)):hover {
+        background: #fff;
+        color: var(--gold-primary) !important;
+    }
+
+.dropdown-menu a:hover {
+    color: var(--gold-primary) !important;
+    background: #fff;
+}
+
     .searchbar {
-        background: var(--black) !important;
-        color: #fff !important;
-        border: 1px solid var(--gold) !important;
         margin-left: 0.3rem;
-        width: 270px !important;
+        width: 230px !important;
     }
 
     .btn {
         width: 100px;
     }
+
+    .navbar-nav a {
+        border-bottom: 1px solid transparent;
+    }
+   
+    .navbar {
+        background-image: url("../images/BCU\ London\ Universe\ STRIP.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--gold-dark);
+
+        /* * align navigation at the top  */;
+        display: flex;
+        align-items: flex-start;
+        height: 180px;
+        position: relative !important;
+    }
+
 }

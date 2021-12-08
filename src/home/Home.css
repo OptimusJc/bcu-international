@@ -1,7 +1,6 @@
-.col {
-    border: 1px solid var(--gold);
+.heading-2 {
+    color: #fff;
 }
-
 .tv-box {
     height: 350px;
 }
@@ -20,6 +19,58 @@
     font-size: 1rem;
 }
 
+.home .live-section p {
+    display: none;
+}
+
+/* * share button  */
+.home .live-section button {
+    display: block;
+    outline: none !important;
+    border: var(--gold-hue);
+    background-image: linear-gradient(to left,
+        var(--gold-primary),
+        var(--gold-light-1),
+        var(--gold-dark),
+        var(--gold-light-1),
+        var(--gold-primary)) !important;
+        
+    color: var(--custom-black) !important;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    width: 140px !important;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.home .live-section button:focus {
+    box-shadow: 0 0 0 0.2rem var(--gold-hue);
+}
+
+ /* custom video list   */
+ .video_list {
+    height: 800px;
+    overflow: scroll;
+    list-style-type: none;
+    padding: 0;
+    background: var(--custom-black2);
+
+}
+.video_list .video_image {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+.video_list span {
+    display: none;
+}
+
+.video_list li p {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+} 
+
+
 @media only screen and (min-width: 48em) {
     .tv-box, .coming-soon .col {
         margin-right: 15px;
@@ -28,27 +79,130 @@
     
     .tv-box {
         height: 550px;
+        margin-top: -2rem !important;
     }
 
+    .coming-soon { margin-bottom: 0; }
     .coming-soon .col {
-        border: none;
+        height: 100px;
+    }
+
+    .home .live-section h3 {
+        width: 600px;
+        word-wrap: break-all;
+    }
+
+    /* ! come back to this  */
+    .video_list {
+        height: 250px;
+        width: 700px;
+        overflow-y: scroll;
+    }
+    .video_list .video_image {
+        width: 120px !important;
+        height: 60px !important;
+        margin-left: 1rem;
+    }
+    .video_list li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .video_list li p {
+        margin-left: 1rem;
+        margin-top: 2rem;
     }
 
 }
 
-
 /* desktop devices  */
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 64em) {
+    /* ? styling for the live heading section  */
+    .home .live-section {
+        position: absolute;
+        top: 6rem;
+        left: 320px;
+    }
+    .home .live-section p {
+        border: 2px solid var(--gold-primary);
+        display: inline;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+
+    .home .live-section h3 {
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        display: inline;
+        padding-left: 1rem;
+    }
+
     .home .column {
         display: flex;
     }
     
     .home .column .row:first-child {
-        flex: 2 !important;
+        flex: 2;
         margin-bottom: 2rem;
+        height: auto;
     }
 
     .coming-soon .col p {
         line-height: 550px;
+        word-wrap: break-all;
+        width: 300px;
+        font-size: 1.8rem;
+        /* margin-left: -1rem; */
+    }
+
+    .coming-soon p .lead {
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .coming-soon {
+        width: 360px;
+        word-break: break-all;
+    }
+
+    .tv-box {
+        width: 600px !important;
+        margin-top: 2rem !important;
+        overflow: hidden;
+    }
+    .tv-box .card-title {
+        display: none;
+    }
+    .tv-box .card {
+        margin-top: 0;
+        margin-right: 0 !important;
+    }
+    .tv-box iframe {
+        width: 900px !important;
+    }
+
+    ul::-webkit-scrollbar {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    ul::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    ul::-webkit-scrollbar-thumb {
+        background: var(--gold-primary);
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 87em) {
+    .coming-soon { 
+        flex: 1;
+    }
+
+    .tv-box .television .video-container {
+        margin-left: -1.3rem;
     }
 }

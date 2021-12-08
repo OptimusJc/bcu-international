@@ -2,19 +2,18 @@ import Card from "react-bootstrap/Card";
 import ReactPlayer from "react-player";
 
 import './Television.css';
+import sunrise_video from "../images/sunrise.mp4";
 
 const Television = () => {
     return (
         <div className="television">
             <Card className=" text-white"  >
-                <Card.Title className="text-center">
+                <Card.Title className="text-center mb-4 mt-0">
                     NESBIT TELEVISION
                 </Card.Title>
-                <ReactPlayer className="video-container"
-                    url={[
-                        "https://www.youtube.com/watch?v=QuB5JoX063Q",
-                        "https://www.youtube.com/watch?v=jNgP6d9HraI",
-                    ]}
+                {/* ? add prop 'controls' to allow users to unmute */}
+                <ReactPlayer playing="true" muted loop className="video-container"
+                    url={ sunrise_video }
                 />
             </Card>
             <div className="spacing"></div>

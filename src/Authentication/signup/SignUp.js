@@ -65,7 +65,7 @@ const SignUp = () => {
                         md={{ span: 2, offset: 2 }}
                         // className="signup"
                     >
-                        <Button type="submit" className="btn btn-warning">
+                        <Button type="submit" className="btn btn-warning btn-align">
                             Sign Up
                         </Button>
                     </Col>

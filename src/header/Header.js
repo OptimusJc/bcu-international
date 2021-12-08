@@ -1,11 +1,10 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
 import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { FormControl } from "react-bootstrap";
 
-import logo from "../../src/logo.png";
+import logo from "../images/bcu_logo.webp";
 import "./Header.css";
 import { Link } from "@reach/router";
 
@@ -14,11 +13,12 @@ const Header = () => (
         <Navbar.Brand href="#">
             <img src={logo} alt="logo" className="brand-logo" />
         </Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
             <Nav
                 className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
-                style={{ maxHeight: "150px" }}
+                style={{ maxHeight: "150px"}}
                 navbarScroll
             >
                 <Nav.Link as={Link} to="/">
@@ -45,6 +45,8 @@ const Header = () => (
                     </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
+            
+            {/* searchbar */}
             <Form className="d-flex my-3 mr-lg-5">
                 <FormControl
                     type="search"
