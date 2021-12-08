@@ -18,6 +18,9 @@
     padding-left: 1rem;
     font-size: 1rem;
 }
+/* .home {
+    z-index: 3;
+} */
 
 .home .live-section p {
     display: none;

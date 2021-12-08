@@ -14,7 +14,7 @@ const Header = () => (
             <img src={logo} alt="logo" className="brand-logo" />
         </Navbar.Brand>
         
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" style={{ background: "var(--gold-primary)"}} />
         <Navbar.Collapse id="navbarScroll">
             <Nav
                 className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
