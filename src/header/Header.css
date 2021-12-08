@@ -125,7 +125,6 @@
     .navbar {
         background-image: url("../images/BCU\ London\ Universe\ STRIP.jpg");
         background-position: center center;
-        background-repeat: no-repeat;
         background-size: cover;
         background-color: var(--gold-dark);
 
