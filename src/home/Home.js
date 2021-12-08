@@ -5,7 +5,7 @@ import "./Home.css";
 import ReactPlayer from "react-player/youtube";
 
 // dummy images 
-import image from "../images/bcu_logo.webp"
+import image from "../../public/images/bcu_logo.webp";
 
 const Home = () => {
     return (

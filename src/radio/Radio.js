@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import "./Radio.css";
-import RadioLogo from "../images/radio_logo_gold.jpeg";
+import RadioLogo from "../../public/images/radio_logo_gold.jpeg";
 
 let url = "http://stream.zeno.fm/t904qy1f268uv";
 

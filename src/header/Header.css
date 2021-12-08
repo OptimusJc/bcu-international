@@ -49,13 +49,6 @@
                         var(--gold-primary)) !important;
                         color: var(--custom-black) !important;
                         
-/* 
-    background-image: linear-gradient(to left,
-                        var(--gold-secondary),
-                        var(--gold-primary),
-                        var(--gold-dark),
-                        var(--gold-primary),
-                        var(--gold-secondary)) !important; */
     border: 1px solid var(--gold-primary);
 }
 
@@ -124,7 +117,7 @@
     }
    
     .navbar {
-        background-image: url('../images/BCU\ London\ Universe\ STRIP.jpg');
+        background-image: url('../../public/images/BCU\ London\ Universe\ STRIP.jpg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

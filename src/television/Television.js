@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import ReactPlayer from "react-player";
 
 import './Television.css';
-import sunrise_video from "/home/optimus/Desktop/Development/bcu-home-clone/src/images/sunrise.mp4";
+import sunrise_video from "../../public/images/sunrise.mp4";
 
 const Television = () => {
     return (
@@ -11,7 +11,8 @@ const Television = () => {
                 <Card.Title className="text-center mb-4 mt-0">
                     NESBIT TELEVISION
                 </Card.Title>
-                <ReactPlayer playing="true" loop className="video-container"
+                {/* ? add prop 'controls' to allow users to unmute */}
+                <ReactPlayer playing="true" muted loop className="video-container"
                     url={ sunrise_video }
                 />
             </Card>
