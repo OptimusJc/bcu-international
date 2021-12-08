@@ -10,6 +10,12 @@
 .navbar {
     padding-left: 0 !important;
     padding-right: 0 !important;
+
+    background-image: url("../images/BCU_mobile_stripe.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
 }
 
 .navbar-nav a,
