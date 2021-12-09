@@ -16,7 +16,6 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: black;
-    /* z-index: 1; */
 }
 
 .dropdown-menu {
@@ -109,10 +108,10 @@
         color: var(--gold-primary) !important;
     }
 
-.dropdown-menu a:hover {
-    color: var(--gold-primary) !important;
-    background: #fff;
-}
+    .dropdown-menu a:hover {
+        color: var(--gold-primary) !important;
+        background: #fff;
+    }
 
     .searchbar {
         margin-left: 0.3rem;
@@ -135,7 +134,7 @@
 
         /* * align navigation at the top  */;
         display: flex;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         height: 180px;
         position: relative !important;
     }
