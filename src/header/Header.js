@@ -9,12 +9,12 @@ import "./Header.css";
 import { Link } from "@reach/router";
 
 const Header = () => (
-    <Navbar variant="dark" expand="lg">
+    <Navbar expand="lg">
         <Navbar.Brand href="#">
             <img src={logo} alt="logo" className="brand-logo" />
         </Navbar.Brand>
         
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" style={{ background: "var(--gold-primary)"}} />
         <Navbar.Collapse id="navbarScroll">
             <Nav
                 className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
@@ -28,9 +28,9 @@ const Header = () => (
                     Podcasts
                 </Nav.Link>
                 <Nav.Link as={Link} to="/videos">
-                    Videos
+                    Videos 
                 </Nav.Link>
-
+                
                 <NavDropdown title="Channels" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="/radio">
                         Radio Channel
@@ -46,15 +46,15 @@ const Header = () => (
                 </NavDropdown>
             </Nav>
             
-            {/* searchbar */}
-            <Form className="d-flex my-3 mr-lg-5">
+            
+            {/* <Form className="d-flex my-3 mr-lg-5">
                 <FormControl
                     type="search"
                     placeholder="Search"
                     className="searchbar d-block"
                     aria-label="Search"
                 />
-            </Form>
+            </Form> */}
 
             <Nav.Link
                 as={Link}
