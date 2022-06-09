@@ -30,35 +30,30 @@
 .searchbar {
     border: 1px solid var(--gold-dark) !important;
     color: #fff !important;
-    background: var(--black) ;
+    background: var(--black);
 }
 
 .navButtons {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
     color: #fff !important;
     border-radius: 2px !important;
-    padding-top: 0.625rem !important;
-    padding-bottom: 0.625rem !important;
+    padding-block: 0.625rem !important;
     text-transform: capitalize !important;
-    font-weight: bold !important;
-}
-
-.navButtons:hover {
-    border: none !important;
+    font-weight: 500 !important;
 }
 
 .btn.btn-warning,
 .btn.btn-warning:active {
     /* ? gold rendition 1 */
-    background-image: linear-gradient(to left,
-                        var(--gold-primary),
-                        var(--gold-light-1),
-                        var(--gold-dark),
-                        var(--gold-light-1),
-                        var(--gold-primary)) !important;
-                        color: var(--custom-black) !important;
-                        
+    background-image: linear-gradient(
+        to left,
+        var(--gold-primary),
+        var(--gold-light-1),
+        var(--gold-dark),
+        var(--gold-light-1),
+        var(--gold-primary)
+    ) !important;
+    color: var(--custom-black) !important;
+
     border: 1px solid var(--gold-primary);
 }
 
@@ -68,7 +63,6 @@
     border: 2px solid var(--gold-dark) !important;
     color: #fff !important;
 }
-
 
 @media only screen and (min-width: 48em) {
     .brand-logo {
@@ -125,18 +119,17 @@
     .navbar-nav a {
         border-bottom: 1px solid transparent;
     }
-   
+
     .navbar {
         background-image: url("../images/BCU\ London\ Universe\ STRIP.jpg");
         background-position: center center;
         background-size: cover;
         background-color: var(--gold-dark);
 
-        /* * align navigation at the top  */;
+        /* * align navigation at the top  */
         display: flex;
         /* align-items: flex-start; */
         height: 180px;
         position: relative !important;
     }
-
 }

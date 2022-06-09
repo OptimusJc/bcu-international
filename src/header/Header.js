@@ -13,12 +13,15 @@ const Header = () => (
         <Navbar.Brand href="#">
             <img src={logo} alt="logo" className="brand-logo" />
         </Navbar.Brand>
-        
-        <Navbar.Toggle aria-controls="navbarScroll" style={{ background: "var(--gold-primary)"}} />
+
+        <Navbar.Toggle
+            aria-controls="navbarScroll"
+            style={{ background: "var(--gold-primary)" }}
+        />
         <Navbar.Collapse id="navbarScroll">
             <Nav
                 className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
-                style={{ maxHeight: "150px"}}
+                style={{ maxHeight: "150px" }}
                 navbarScroll
             >
                 <Nav.Link as={Link} to="/">
@@ -28,9 +31,9 @@ const Header = () => (
                     Podcasts
                 </Nav.Link>
                 <Nav.Link as={Link} to="/videos">
-                    Videos 
+                    Videos
                 </Nav.Link>
-                
+
                 <NavDropdown title="Channels" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="/radio">
                         Radio Channel
@@ -45,8 +48,7 @@ const Header = () => (
                     </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
-            
-            
+
             {/* <Form className="d-flex my-3 mr-lg-5">
                 <FormControl
                     type="search"
@@ -56,20 +58,22 @@ const Header = () => (
                 />
             </Form> */}
 
-            <Nav.Link
-                as={Link}
-                to="/signup"
-                className=" btn btn-warning navButtons mr-lg-3"
-            >
-                Sign Up
-            </Nav.Link>
-            <Nav.Link
-                as={Link}
-                to="/login"
-                className="btn btn-outline-warning navButtons mr-lg-2"
-            >
-                Log In
-            </Nav.Link>
+            <Nav>
+                <Nav.Link
+                    as={Link}
+                    to="/signup"
+                    className=" btn btn-warning navButtons mr-lg-4"
+                >
+                    Sign Up
+                </Nav.Link>
+                <Nav.Link
+                    as={Link}
+                    to="/login"
+                    className="btn btn-outline-warning navButtons mr-lg-2"
+                >
+                    Log In
+                </Nav.Link>
+            </Nav>
         </Navbar.Collapse>
     </Navbar>
 );
