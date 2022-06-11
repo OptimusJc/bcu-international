@@ -1,8 +1,4 @@
-// import { Link } from "react-router-dom";
-// import { BiTime } from "react-icons/bi";
-
 import "./podcast.modules.css";
-// import { doc } from "firebase/firestore";
 
 const Podcast = ({ title, author, date, path, doc_id }) => {
     return (
