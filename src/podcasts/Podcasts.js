@@ -1,47 +1,32 @@
-import { useEffect, useState } from "react";
-import db from "../firebase.config";
-import ReactPlayer from "react-player";
+import "./podcast.modules.css";
+import Podcast from "./Podcast";
+
+import useFirestore from "../useFirestore";
 
 const Podcasts = () => {
-    // const [videos, setVideos] = useState([]);
-    // useEffect(() => {
-    //     fetchAll();
-    // }, []);
-
-    // function fetchAll() {
-    //     //e.preventDefault();
-
-    //     db.collection("songs")
-    //         .get()
-    //         .then((snapshot) => {
-    //             if (snapshot.docs.length > 0) {
-    //                 snapshot.docs.forEach((doc) => {
-    //                     setVideos((prev) => {
-    //                         return [...prev, doc.data()];
-    //                     });
-    //                 });
-    //             }
-    //         });
-    // }
+    // * Get docs array from useFirestore
+    const featured_data = useFirestore("podcasts/others/other_podcasts");
 
     return (
-        <div>
-            {/* {videos.map((doc, index) => {
-                return (
-                    <div key={index}>
-                        <ReactPlayer
-                            url={doc.mediaID}
-                            width="400px"
-                            height="100px"
-                            playing={false}
-                            controls={true}
-                        />
-
-                        <p>{doc.title}</p>
-                        <p>{doc.subtitle}</p>
-                    </div>
-                );
-            })} */}
+        <div className="featured">
+            <h3>Podcast</h3>
+            <div className="featured-container">
+                {featured_data &&
+                    featured_data.map((doc) => {
+                        const date = doc.createdAt.toDate().toDateString();
+                        const title = doc.title;
+                        return (
+                            <Podcast
+                                key={doc.id}
+                                doc_id={doc.id}
+                                path={doc.url}
+                                author={title.split(".")[0]}
+                                title={title}
+                                date={date}
+                            />
+                        );
+                    })}
+            </div>
         </div>
     );
 };
