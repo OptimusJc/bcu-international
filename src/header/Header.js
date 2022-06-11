@@ -1,75 +1,94 @@
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import { NavDropdown } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
-import { FormControl } from "react-bootstrap";
-
-import logo from "../images/bcu_logo.webp";
-import "./Header.css";
 import { Link } from "@reach/router";
 
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import logo from "../images/bcu_logo.webp";
+import styles from "./header.module.css";
+
 const Header = () => (
-    <Navbar expand="lg">
-        <Navbar.Brand href="#">
-            <img src={logo} alt="logo" className="brand-logo" />
+    <Navbar
+        expand="lg"
+        className={[styles.navbar, styles.navbar_expand_lg].join(" ")}
+    >
+        <Navbar.Brand href="/">
+            <img src={logo} alt="logo" className={styles.brand_logo} />
         </Navbar.Brand>
 
         <Navbar.Toggle
             aria-controls="navbarScroll"
             style={{ background: "var(--gold-primary)" }}
         />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse
+            className={[styles.navbar_nav, styles.navbarScroll].join(" ")}
+            id="navbarScroll"
+        >
             <Nav
-                className="mr-auto ml-lg-5 my-2 my-lg-0 navigation"
+                className={[
+                    "mr-auto ml-lg-5 my-2 my-lg-0",
+                    styles.navigation,
+                ].join(" ")}
                 style={{ maxHeight: "150px" }}
                 navbarScroll
             >
-                <Nav.Link as={Link} to="/">
+                <Nav.Link className={styles.nav_link} as={Link} to="/">
                     Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/podcasts">
+                <Nav.Link className={styles.nav_link} as={Link} to="/podcasts">
                     Podcasts
                 </Nav.Link>
-                <Nav.Link as={Link} to="/videos">
+                <Nav.Link className={styles.nav_link} as={Link} to="/videos">
                     Videos
                 </Nav.Link>
 
-                <NavDropdown title="Channels" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="/radio">
+                <NavDropdown
+                    className={styles.dropdown_menu}
+                    title="Channels"
+                    id="navbarScrollingDropdown"
+                >
+                    <NavDropdown.Item
+                        className={styles.dropdown_item}
+                        href="/radio"
+                    >
                         Radio Channel
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/television">
+                    <NavDropdown.Item
+                        className={styles.dropdown_item}
+                        href="/television"
+                    >
                         Television Channel
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item
+                        className={styles.dropdown_item}
+                        href="#action5"
+                    >
                         Music Channel
                     </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
 
-            {/* <Form className="d-flex my-3 mr-lg-5">
-                <FormControl
-                    type="search"
-                    placeholder="Search"
-                    className="searchbar d-block"
-                    aria-label="Search"
-                />
-            </Form> */}
-
             <Nav>
                 <Nav.Link
                     as={Link}
                     to="/signup"
-                    className=" btn btn-warning navButtons mr-lg-4"
+                    className={[
+                        "btn btn-warning mr-lg-4",
+                        styles.navButtons,
+                        styles.btn_warning,
+                    ].join(" ")}
                 >
                     Sign Up
                 </Nav.Link>
                 <Nav.Link
                     as={Link}
                     to="/login"
-                    className="btn btn-outline-warning navButtons mr-lg-2"
+                    className={[
+                        "btn btn-outline-warning mr-lg-2",
+                        styles.navButtons,
+                        styles.btn_outline_warning,
+                    ].join(" ")}
                 >
                     Log In
                 </Nav.Link>

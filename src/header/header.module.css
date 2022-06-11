@@ -1,10 +1,6 @@
-.brand-logo {
+.brand_logo {
     width: 130px;
     height: 70px;
-}
-
-.dropdown-menu {
-    background: var(--black) !important;
 }
 
 .navbar {
@@ -12,37 +8,34 @@
     padding-right: 0 !important;
 
     background-image: url("../images/BCU_mobile_stripe.jpg");
+    background-color: black;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: black;
 }
 
-.dropdown-menu {
-    background: var(--custom-black) !important;
+.dropdown_menu > div {
+    background-color: var(--custom-black) !important;
 }
 
-.navbar-nav a,
-.dropdown-item {
+.navbar a,
+.dropdown_item {
     color: #fff !important;
-}
-
-.searchbar {
-    border: 1px solid var(--gold-dark) !important;
-    color: #fff !important;
-    background: var(--black);
 }
 
 .navButtons {
-    color: #fff !important;
     border-radius: 2px !important;
     padding-block: 0.625rem !important;
     text-transform: capitalize !important;
     font-weight: 500 !important;
 }
 
-.btn.btn-warning,
-.btn.btn-warning:active {
+.btn_warning {
+    color: var(--custom-black) !important;
+}
+
+.btn_warning,
+.btn_warning:active {
     /* ? gold rendition 1 */
     background-image: linear-gradient(
         to left,
@@ -51,72 +44,61 @@
         var(--gold-dark),
         var(--gold-light-1),
         var(--gold-primary)
-    ) !important;
-    color: var(--custom-black) !important;
+    );
 
     border: 1px solid var(--gold-primary);
 }
 
-.btn.btn-outline-warning,
-.btn.btn-outline-warning:hover,
-.btn.btn-outline-warning:active {
-    border: 2px solid var(--gold-dark) !important;
-    color: #fff !important;
+.btn_outline_warning,
+.btn_outline_warning:hover,
+.btn_outline_warning:active {
+    border: 2px solid var(--gold-dark);
 }
 
 @media only screen and (min-width: 48em) {
-    .brand-logo {
+    .brand_logo {
         width: 150px;
         height: 80px;
     }
 
-    .navbar-expand-lg .navigation {
+    .navbar_expand_lg .navigation {
         margin-left: 0 !important;
     }
 
-    .searchbar {
-        width: 300px !important;
-        padding-top: 1.3rem !important;
-        padding-bottom: 1.3rem !important;
-    }
-
-    .btn {
+    .btn_warning,
+    .btn_outline_warning {
         width: 300px;
     }
 }
 
 @media only screen and (min-width: 64em) {
     /* * moves the navbarScroll to the top of the header container  */
-    #navbarScroll {
+    .navbarScroll {
         margin-top: -5rem;
     }
 
-    .brand-logo {
+    .brand_logo {
         width: 280px;
         height: 130px;
     }
 
     /* * gives the links a white background and gold color  */
-    .navbar .nav-link:not(.navButtons:nth-last-child(2)):hover {
+    .navbar .nav_link:not(.navButtons:nth-last-child(2)):hover {
         background: #fff;
         color: var(--gold-primary) !important;
     }
 
-    .dropdown-menu a:hover {
+    .dropdown_menu a:hover {
         color: var(--gold-primary) !important;
         background: #fff;
     }
 
-    .searchbar {
-        margin-left: 0.3rem;
-        width: 230px !important;
-    }
-
-    .btn {
+    .btn_warning,
+    .btn_outline_warning {
         width: 100px;
     }
 
-    .navbar-nav a {
+    .navbar_nav a {
         border-bottom: 1px solid transparent;
     }
 
@@ -128,7 +110,6 @@
 
         /* * align navigation at the top  */
         display: flex;
-        /* align-items: flex-start; */
         height: 180px;
         position: relative !important;
     }
