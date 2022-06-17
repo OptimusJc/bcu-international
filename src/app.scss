@@ -1,6 +1,5 @@
 :root {
     /* * custom colors  */
-    /* --black: #091015; */
     --custom-black: #0a1117;
     --custom-black2: #0f181d;
 
@@ -25,10 +24,11 @@
 }
 
 body {
-    background: var(--custom-black);
+    // background: var(--custom-black);
     color: #fff;
-    position: relative;
+    // position: relative;
     margin: 0;
+    padding: 0;
     font-family: "poppins", sans-serif;
 }
 

@@ -1,15 +1,29 @@
-import firebase from "firebase";
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getStorage } from "firebase/storage";
+// import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig = firebase.initializeApp({
-    apiKey: "AIzaSyDda6qD1ywP7XdaahRqPfPjYFSf2NU0GLE",
-    authDomain: "universelondon-1fb43.firebaseapp.com",
-    projectId: "universelondon-1fb43",
-    storageBucket: "universelondon-1fb43.appspot.com",
-    messagingSenderId: "513503751800",
-    appId: "1:513503751800:web:89a64d84499b6bb976478d",
-    measurementId: "G-22M0TX7NDS",
-});
+// // import { getAnalytics } from "firebase/analytics";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
 
-const db = firebaseConfig.firestore();
+// // Your web app's Firebase configuration
+// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const firebaseConfig = {
+//     apiKey: "AIzaSyAwjH1zJ1GbIYRwcuuGN5Gtw8Vb_q3F2NQ",
+//     authDomain: "bcu-library.firebaseapp.com",
+//     projectId: "bcu-library",
+//     storageBucket: "bcu-library.appspot.com",
+//     messagingSenderId: "773492348238",
+//     appId: "1:773492348238:web:e874139858466bd774fa1f",
+//     measurementId: "G-N6LFH0B1VY",
+// };
 
-export default db;
+// // * Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const fireStorage = getStorage(app);
+
+// // * Initialize services
+// const fireStore = getFirestore(app);
+
+// export { fireStore, fireStorage };

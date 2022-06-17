@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import db from "../firebase.config";
+import { fireStore as db } from "../firebase.js";
 import ReactPlayer from "react-player";
 
 const Podcasts = () => {

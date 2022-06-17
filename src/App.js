@@ -11,6 +11,8 @@ import Video from "./videos/Video";
 import Podcasts from "./podcasts/Podcasts";
 import Television from "./television/Television";
 
+import "./app.scss";
+
 function App() {
     return (
         <div className="container-fluid">
