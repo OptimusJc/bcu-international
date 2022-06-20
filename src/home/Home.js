@@ -2,13 +2,13 @@ import { Row, Col } from "react-bootstrap";
 import Television from "../television/Television";
 import ReactPlayer from "react-player/youtube";
 
-import "./Home.css";
+import "./home.scss";
 
 import image from "../images/bcu_logo.webp";
 
 const Home = () => {
     return (
-        <div className="home" style={{ marginBottom: "3rem" }}>
+        <div className="home">
             <div className="live-section">
                 <p>live</p>
                 <h3>
