@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import ReactPlayer from "react-player";
 
-import "./Television.css";
+import "./television.scss";
 import sunrise_video from "../images/sunrise.mp4";
 
 const Television = () => {
@@ -20,7 +20,7 @@ const Television = () => {
                     url={sunrise_video}
                 />
             </Card>
-            <div className="spacing"></div>
+            {/* <div className="spacing"></div */}
         </div>
     );
 };

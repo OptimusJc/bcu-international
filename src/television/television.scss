@@ -1,0 +1,37 @@
+.television {
+    .card {
+        box-shadow: none;
+        border: none;
+        width: auto;
+        margin-inline: -15px;
+        margin-block: 2rem;
+        padding-block: 1rem;
+        background: none;
+
+        .video-container {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+    @media only screen and (min-width: 48em) {
+        .card {
+            margin-top: 4rem;
+
+            .video-container {
+                height: 400px !important;
+                width: auto !important;
+                margin: auto;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 64em) {
+        .card {
+            .video-container {
+                height: 540px !important;
+                width: 1000px !important;
+            }
+        }
+    }
+}
