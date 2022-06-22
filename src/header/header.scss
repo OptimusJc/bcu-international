@@ -1,0 +1,127 @@
+.navbar {
+    background-image: url("../images/BCU_mobile_stripe.jpg");
+    background-color: var(--custom-black);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    // * reset the padding to make the navbar full-width
+    margin-inline: -0.75rem;
+
+    .navbar-brand .brand_logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        svg {
+            height: 45px;
+            width: 45px;
+            color: var(--gold-primary);
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-collapse {
+        padding-inline: 1rem;
+        .navbar-nav {
+            .nav-link {
+                color: var(--bs-white);
+            }
+
+            .dropdown_menu {
+                .nav-link.dropdown-toggle {
+                    color: var(--bs-white);
+                    // * check this
+                    &:active {
+                        color: var(--bs-white);
+                    }
+                }
+
+                .dropdown-menu {
+                    background-color: var(--custom-black);
+
+                    .dropdown-item {
+                        color: var(--bs-white);
+                    }
+                    .dropdown-divider {
+                        color: var(--gold-light-1);
+                        height: 1.5px;
+                    }
+                }
+            }
+        }
+
+        .secondary-nav {
+            .navButtons {
+                border-radius: 2px;
+                // padding-block: 0.625rem;
+                font-weight: 500;
+            }
+            .navButtons.btn-warning {
+                color: var(--custom-black);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 48em) {
+        background-image: url("../images/BCU\ London\ Universe\ STRIP.jpg");
+        background-size: 100%;
+        background-position: top;
+        padding-inline-end: 1.3rem;
+
+        .navbar-brand .brand_logo {
+            width: 160px;
+        }
+
+        .navbar-collapse {
+            padding-inline: 1rem;
+
+            .secondary-nav .navButtons {
+                width: 35%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 64em) {
+        background-image: url("../images/BCU\ London\ Universe\ STRIP.jpg");
+        background-position: center center;
+        background-size: cover;
+        padding-inline-end: 0;
+
+        .navbar-brand .brand_logo {
+            width: 230px;
+            height: 130px;
+        }
+
+        .navbar-collapse {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -4rem;
+
+            .navbar-nav {
+                .nav-link,
+                .dropdown_menu .nav-link.dropdown-toggle,
+                .dropdown-menu .dropdown-item {
+                    &:hover {
+                        color: var(--gold-primary);
+                        background: #fff;
+                    }
+                }
+            }
+
+            .secondary-nav {
+                .navButtons {
+                    width: 100px;
+                }
+                .navButtons.btn-warning {
+                    &:hover {
+                        color: var(--custom-black);
+                    }
+                }
+            }
+        }
+    }
+}

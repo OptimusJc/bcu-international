@@ -1,7 +1,9 @@
-import "./podcast.modules.css";
-import Podcast from "./Podcast";
-
+import { useEffect, useState } from "react";
+import { fireStore as db } from "../firebase.js";
+import ReactPlayer from "react-player";
 import useFirestore from "../useFirestore";
+
+import "./Podcast";
 
 const Podcasts = () => {
     // * Get docs array from useFirestore

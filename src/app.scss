@@ -1,8 +1,7 @@
 :root {
     /* * custom colors  */
-    /* --black: #091015; */
-    --custom-black: #0A1117;
-    --custom-black2: #0F181D;
+    --custom-black: #0a1117;
+    --custom-black2: #0f181d;
 
     /* * gold color schemes 1[that works]  */
     --gold-primary: #bf953f;
@@ -12,24 +11,25 @@
     --gold-dark: #aa771c;
     --gold-hue: rgba(179, 135, 40, 0.3);
 
-   /* * socail icon colors  */
-   --facebook: #3A558C;
-   --twitter: #05C7F2;
+    /* * socail icon colors  */
+    --facebook: #3a558c;
+    --twitter: #05c7f2;
 }
 
 *,
 *::before,
 *::after {
     font-size: 15px;
-    color: #fff;
     box-sizing: border-box;
 }
 
 body {
-    position: relative;
+    background: var(--custom-black);
+    color: #fff;
+    // position: relative;
     margin: 0;
-    font-family: "poppins", sans-serif !important;
-    background: var(--custom-black) !important;
+    padding: 0;
+    font-family: "poppins", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -37,17 +37,10 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-track {
     background: #f1f1f1;
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
-
-/* .image {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-} */

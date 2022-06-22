@@ -1,15 +1,17 @@
+import { Router } from "@reach/router";
+
 import Login from "./Authentication/login/Login";
 import Header from "./header/Header";
 import SignUp from "./Authentication/signup/SignUp";
 import Home from "./home/Home";
 import Videos from "./videos/Videos";
-import { Router } from "@reach/router";
 import Footer from "./footer/Footer";
 import Radio from "./radio/Radio";
-
 import Video from "./videos/Video";
 import Podcasts from "./podcasts/Podcasts";
 import Television from "./television/Television";
+
+import "./app.scss";
 
 function App() {
     return (

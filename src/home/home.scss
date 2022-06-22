@@ -1,0 +1,175 @@
+.home {
+    .live-section {
+        display: none;
+    }
+
+    .tv-box {
+        .card-title {
+            display: none;
+        }
+    }
+
+    .coming-soon {
+        margin-bottom: 3rem;
+    }
+
+    .container-fluid {
+        .list {
+            .video_list {
+                height: 800px;
+                overflow: scroll;
+                list-style-type: none;
+                padding: 0;
+                background: var(--custom-black2);
+
+                .video_image {
+                    width: 100% !important;
+                    height: 200px !important;
+                }
+
+                span {
+                    display: none;
+                }
+
+                li p {
+                    margin-top: 0.5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 48em) {
+        .tv-box {
+            .video-container {
+                margin: auto;
+                width: auto;
+                height: 400px;
+            }
+        }
+
+        .container-fluid {
+            .list {
+                .video_list {
+                    height: 250px;
+                    width: 700px;
+                    overflow-y: scroll;
+                    color: #fff;
+
+                    .video_image {
+                        width: 120px !important;
+                        height: 60px !important;
+                        margin-left: 1rem;
+                    }
+                    li {
+                        display: flex;
+                        align-items: center;
+                        p {
+                            margin-left: 1rem;
+                            margin-top: 2rem;
+                        }
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 0.7rem;
+                        height: 0.7rem;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: #f1f1f1;
+                        box-shadow: inset 0 0 5px grey;
+                        border-radius: 10px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: var(--gold-primary);
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 64em) {
+        .live-section {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 4.5rem;
+            left: 270px;
+
+            p {
+                text-transform: capitalize;
+                font-size: 1.2rem;
+                font-weight: 500;
+                display: inline;
+                margin-bottom: 0.3rem;
+
+                span {
+                    border: 2px solid var(--gold-primary);
+                    padding: 0.2rem;
+                    margin-right: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.125rem;
+                    font-size: 0.7rem;
+                }
+            }
+
+            button.btn-primary {
+                color: var(--custom-black);
+                width: 180px;
+                outline: none;
+                border: var(--gold-hue);
+                margin: 0.4rem 0 0 0;
+                background-image: linear-gradient(
+                    to left,
+                    var(--gold-primary),
+                    var(--gold-light-1),
+                    var(--gold-dark),
+                    var(--gold-light-1),
+                    var(--gold-primary)
+                );
+
+                &:hover {
+                    box-shadow: 0 0 10px 5px var(--gold-hue);
+                }
+            }
+        }
+
+        .col__flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            .tv-box {
+                flex: 2;
+                width: 700px;
+                overflow: hidden;
+
+                .video-container {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+
+            .coming-soon p {
+                font-size: 2rem;
+                padding-inline-start: 1rem;
+
+                .lead {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 85em) {
+        .tv-box {
+            .video-container {
+                margin-left: -1.3rem;
+            }
+        }
+        .coming-soon {
+            flex: 1;
+        }
+    }
+}
