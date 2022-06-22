@@ -3,7 +3,7 @@ import { fireStore as db } from "../firebase.js";
 import ReactPlayer from "react-player";
 import useFirestore from "../useFirestore";
 
-import "./Podcast";
+import Podcast from "./Podcast";
 
 const Podcasts = () => {
     // * Get docs array from useFirestore
