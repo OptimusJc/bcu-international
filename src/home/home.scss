@@ -1,7 +1,48 @@
 .home {
-    outline: 2px dashed yellow;
     .live-section {
-        outline: 2px solid red;
+        display: none;
+    }
+
+    @media only screen and (min-width: 64em) {
+        .live-section {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 4.5rem;
+            left: 270px;
+
+            p {
+                text-transform: capitalize;
+                font-size: 1.1rem;
+                font-weight: 500;
+                display: inline;
+                margin-bottom: 0.3rem;
+
+                span {
+                    border: 2px solid var(--gold-primary);
+                    padding: 0.2rem 0.3rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.125rem;
+                    font-size: 0.7rem;
+                }
+            }
+
+            button.btn-primary {
+                color: var(--custom-black);
+                width: 180px;
+                outline: none;
+                border: var(--gold-hue);
+                margin: 0.4rem 0 0 0;
+                background-image: linear-gradient(
+                    to left,
+                    var(--gold-primary),
+                    var(--gold-light-1),
+                    var(--gold-dark),
+                    var(--gold-light-1),
+                    var(--gold-primary)
+                );
+            }
+        }
     }
 }
 
@@ -28,28 +69,6 @@
 //     display: none;
 // }
 
-// /* * share button  */
-// .home .live-section button {
-//     display: block;
-//     outline: none;
-//     border: var(--gold-hue);
-//     background-image: linear-gradient(
-//         to left,
-//         var(--gold-primary),
-//         var(--gold-light-1),
-//         var(--gold-dark),
-//         var(--gold-light-1),
-//         var(--gold-primary)
-//     );
-
-//     color: var(--custom-black);
-//     font-size: 0.9rem;
-//     text-transform: capitalize;
-//     width: 140px;
-//     margin-left: 0;
-//     margin-top: 1rem;
-//     margin-bottom: 2rem;
-// }
 // .home .live-section button:focus {
 //     box-shadow: 0 0 0 0.2rem var(--gold-hue);
 // }
@@ -127,24 +146,7 @@
 // @media only screen and (min-width: 64em) {
 //     /* ? styling for the live heading section  */
 //     .home .live-section {
-//         position: absolute;
-//         top: 6rem;
-//         left: 320px;
-//         color: #fff;
-//     }
-//     .home .live-section p {
-//         border: 2px solid var(--gold-primary);
-//         display: inline;
-//         padding: 5px;
-//         text-transform: uppercase;
-//         font-size: 0.9rem;
-//     }
-
-//     .home .live-section h3 {
-//         text-transform: capitalize;
-//         font-size: 1.4rem;
-//         display: inline;
-//         padding-left: 1rem;
+//
 //     }
 
 //     .home .column {
