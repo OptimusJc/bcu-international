@@ -13,7 +13,7 @@
         margin-bottom: 3rem;
     }
 
-    .container {
+    .container-fluid {
         .list {
             .video_list {
                 height: 800px;
@@ -48,7 +48,7 @@
             }
         }
 
-        .container {
+        .container-fluid {
             .list {
                 .video_list {
                     height: 250px;
@@ -98,14 +98,15 @@
 
             p {
                 text-transform: capitalize;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 font-weight: 500;
                 display: inline;
                 margin-bottom: 0.3rem;
 
                 span {
                     border: 2px solid var(--gold-primary);
-                    padding: 0.2rem 0.3rem;
+                    padding: 0.2rem;
+                    margin-right: 1rem;
                     text-transform: uppercase;
                     letter-spacing: 0.125rem;
                     font-size: 0.7rem;
@@ -126,6 +127,10 @@
                     var(--gold-light-1),
                     var(--gold-primary)
                 );
+
+                &:hover {
+                    box-shadow: 0 0 10px 5px var(--gold-hue);
+                }
             }
         }
 
@@ -156,36 +161,15 @@
             }
         }
     }
+
+    @media only screen and (min-width: 85em) {
+        .tv-box {
+            .video-container {
+                margin-left: -1.3rem;
+            }
+        }
+        .coming-soon {
+            flex: 1;
+        }
+    }
 }
-
-// .home .live-section button:focus {
-//     box-shadow: 0 0 0 0.2rem var(--gold-hue);
-// }
-
-// /* desktop devices  */
-// @media only screen and (min-width: 64em) {
-
-//     ul::-webkit-scrollbar {
-//         width: 0.8rem;
-//         height: 0.8rem;
-//     }
-//     ul::-webkit-scrollbar-track {
-//         background: #f1f1f1;
-//         box-shadow: inset 0 0 5px grey;
-//         border-radius: 10px;
-//     }
-//     ul::-webkit-scrollbar-thumb {
-//         background: var(--gold-primary);
-//         border-radius: 10px;
-//     }
-// }
-
-// @media only screen and (min-width: 87em) {
-//     .coming-soon {
-//         flex: 1;
-//     }
-
-//     .tv-box .television .video-container {
-//         margin-left: -1.3rem;
-//     }
-// }

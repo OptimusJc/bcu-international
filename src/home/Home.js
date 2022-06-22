@@ -16,7 +16,7 @@ const Home = () => {
                 </p>
                 <button className="btn btn-primary"> share this page</button>
             </div>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col col__flex">
                         <div className="tv-box">
