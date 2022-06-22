@@ -1,7 +1,7 @@
 import { Link } from "@reach/router";
 import { ListGroup } from "react-bootstrap";
 
-import "./Footer.css";
+import "./footer.scss";
 
 const Footer = () => {
     return (
