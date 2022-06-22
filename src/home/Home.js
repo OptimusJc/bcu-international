@@ -18,18 +18,18 @@ const Home = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col col__flex">
                         <div className="tv-box">
                             <Television />
                         </div>
-                        <div>
+                        <div className="coming-soon">
                             <p className="display-6">
                                 BCU Television
                                 <sub className="lead">coming soon...</sub>
                             </p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="list">
                         <h2 className="heading-2">
                             Body of Christ United International Videos on Demand
                         </h2>
